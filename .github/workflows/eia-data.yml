@@ -1,0 +1,52 @@
+name: EIA data integrity
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: eia-data-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Compile
+        run: python -m py_compile scripts/build_eia_api.py tests/test_eia_api.py
+      - name: Unit tests
+        run: python -m unittest tests.test_eia_api -v
+      - name: Build distribution
+        run: python scripts/build_eia_api.py --output build/api/v1
+      - name: Smoke test distribution
+        run: |
+          python - <<'PY'
+          import csv, hashlib, json
+          from pathlib import Path
+          root = Path('build/api/v1')
+          manifest = json.loads((root/'manifest.json').read_text())
+          latest = json.loads((root/'latest.json').read_text())
+          series = json.loads((root/'series.json').read_text())
+          rows = list(csv.DictReader((root/'observations.csv').open()))
+          assert manifest['series_count'] == len(series['series']) == len(latest['series']) == 11
+          assert manifest['observation_count'] == len(rows) == 66
+          for name, meta in manifest['files'].items():
+              data = (root/name).read_bytes()
+              assert len(data) == meta['bytes']
+              assert hashlib.sha256(data).hexdigest() == meta['sha256']
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: eia-petroleum-api-v1
+          path: build/api/v1
+          retention-days: 30
