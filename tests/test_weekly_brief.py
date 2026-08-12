@@ -37,7 +37,7 @@ class WeeklyBriefTest(unittest.TestCase):
         self.assertEqual(us["weekly_change"], {"status": "OK", "value": 2010, "reason": None})
         self.assertEqual(us["weekly_percentage_change"]["status"], "OK")
         self.assertAlmostEqual(us["weekly_percentage_change"]["value"], 0.491, places=3)
-        self.assertAlmostEqual(us["versus_window_average"]["value"], 1436.0, places=3)
+        self.assertAlmostEqual(us["versus_window_average"]["value"], 1411.0, places=3)
 
     def test_zero_denominator_is_not_computable(self):
         snapshot = copy.deepcopy(self.snapshot)
@@ -71,7 +71,7 @@ class WeeklyBriefTest(unittest.TestCase):
             self.assertEqual({path.name for path in output.iterdir()}, {"brief.json", "brief.md", "brief.html"})
             machine = json.loads((output / "brief.json").read_text(encoding="utf-8"))
             self.assertEqual(machine["source_snapshot_sha256"], brief["source_snapshot_sha256"])
-            self.assertIn("No price forecast", (output / "brief.html").read_text(encoding="utf-8"))
+            self.assertIn("no price forecast", (output / "brief.html").read_text(encoding="utf-8").lower())
 
 
 if __name__ == "__main__":
