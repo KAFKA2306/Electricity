@@ -1,0 +1,53 @@
+{
+  "comparison_window": 4,
+  "delivery_formats": [
+    "html",
+    "markdown"
+  ],
+  "id": "weekly-petroleum-sample-v1",
+  "schema_version": "1.0.0",
+  "series": [
+    {
+      "absolute_change_threshold": 5000,
+      "id": "commercial_crude_us",
+      "label": "US commercial crude",
+      "percentage_change_threshold": 2.0
+    },
+    {
+      "absolute_change_threshold": 1000,
+      "id": "commercial_crude_cushing",
+      "label": "Cushing commercial crude",
+      "percentage_change_threshold": 5.0
+    },
+    {
+      "absolute_change_threshold": 500,
+      "id": "commercial_crude_padd1",
+      "label": "PADD 1 commercial crude",
+      "percentage_change_threshold": 5.0
+    },
+    {
+      "absolute_change_threshold": 1000,
+      "id": "commercial_crude_padd2",
+      "label": "PADD 2 commercial crude",
+      "percentage_change_threshold": 2.0
+    },
+    {
+      "absolute_change_threshold": 3000,
+      "id": "commercial_crude_padd3",
+      "label": "PADD 3 commercial crude",
+      "percentage_change_threshold": 2.0
+    },
+    {
+      "absolute_change_threshold": 500,
+      "id": "commercial_crude_padd4",
+      "label": "PADD 4 commercial crude",
+      "percentage_change_threshold": 3.0
+    },
+    {
+      "absolute_change_threshold": 1000,
+      "id": "commercial_crude_padd5",
+      "label": "PADD 5 commercial crude",
+      "percentage_change_threshold": 3.0
+    }
+  ]
+}
