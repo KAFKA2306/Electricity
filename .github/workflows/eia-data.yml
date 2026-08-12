@@ -18,14 +18,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
       - name: Compile
-        run: python -m py_compile scripts/build_eia_api.py tests/test_eia_api.py
+        run: python -m py_compile scripts/build_eia_api.py scripts/build_weekly_brief.py tests/test_eia_api.py tests/test_weekly_brief.py
       - name: Unit tests
-        run: python -m unittest tests.test_eia_api -v
+        run: python -m unittest tests.test_eia_api tests.test_weekly_brief -v
       - name: Build distribution
         run: python scripts/build_eia_api.py --output build/api/v1
       - name: Smoke test distribution
@@ -45,8 +45,33 @@ jobs:
               assert len(data) == meta['bytes']
               assert hashlib.sha256(data).hexdigest() == meta['sha256']
           PY
-      - uses: actions/upload-artifact@v4
+      - name: Build weekly petroleum brief sample
+        run: python scripts/build_weekly_brief.py --output build/weekly-brief
+      - name: Audit weekly brief sample
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root = Path('build/weekly-brief')
+          brief = json.loads((root/'brief.json').read_text())
+          assert len(brief['series']) == 7
+          assert brief['source_publisher'] == 'U.S. Energy Information Administration (EIA)'
+          assert len(brief['source_snapshot_sha256']) == 64
+          assert (root/'brief.md').stat().st_size > 0
+          assert (root/'brief.html').stat().st_size > 0
+          assert all(item['source_url'].startswith('https://www.eia.gov/') for item in brief['series'])
+          PY
+      - uses: actions/upload-artifact@v7
         with:
           name: eia-petroleum-api-v1
           path: build/api/v1
           retention-days: 30
+      - uses: actions/upload-artifact@v7
+        with:
+          name: weekly-petroleum-brief-sample
+          path: build/weekly-brief
+          retention-days: 30
+      - name: Verify clean checkout
+        run: |
+          rm -rf build __pycache__ scripts/__pycache__ tests/__pycache__
+          test -z "$(git status --porcelain --untracked-files=all)"
