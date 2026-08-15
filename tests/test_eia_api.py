@@ -19,8 +19,8 @@ class EiaApiTest(unittest.TestCase):
         self.assertIn("manifest.json", files)
         manifest = json.loads(files["manifest.json"])
         self.assertEqual(manifest["series_count"], 11)
-        self.assertEqual(manifest["observation_count"], 66)
-        self.assertEqual(manifest["latest_period_confirmed"], "2026-07-17")
+        self.assertEqual(manifest["observation_count"], 77)
+        self.assertEqual(manifest["latest_period_confirmed"], "2026-07-24")
         with tempfile.TemporaryDirectory() as tmp:
             out = Path(tmp)
             MODULE.write_files(out, files)

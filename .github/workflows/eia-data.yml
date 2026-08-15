@@ -39,7 +39,7 @@ jobs:
           series = json.loads((root/'series.json').read_text())
           rows = list(csv.DictReader((root/'observations.csv').open()))
           assert manifest['series_count'] == len(series['series']) == len(latest['series']) == 11
-          assert manifest['observation_count'] == len(rows) == 66
+          assert manifest['observation_count'] == len(rows) == 77
           for name, meta in manifest['files'].items():
               data = (root/name).read_bytes()
               assert len(data) == meta['bytes']
