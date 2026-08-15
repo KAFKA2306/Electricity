@@ -1,0 +1,182 @@
+{
+  "observed_at": "2026-08-16T03:09:06+09:00",
+  "schema_version": "1.0.0",
+  "series": [
+    {
+      "area": "US",
+      "id": "commercial_crude_us",
+      "observations": [
+        {"period": "2026-06-12", "value": 418222},
+        {"period": "2026-06-19", "value": 412134},
+        {"period": "2026-06-26", "value": 408359},
+        {"period": "2026-07-03", "value": 411357},
+        {"period": "2026-07-10", "value": 409665},
+        {"period": "2026-07-17", "value": 411675},
+        {"period": "2026-07-24", "value": 404508}
+      ],
+      "title": "Commercial Crude Oil (Excl. Lease Stock)",
+      "unit": "thousand barrels"
+    },
+    {
+      "area": "PADD 1",
+      "id": "commercial_crude_padd1",
+      "observations": [
+        {"period": "2026-06-12", "value": 7892},
+        {"period": "2026-06-19", "value": 8478},
+        {"period": "2026-06-26", "value": 7922},
+        {"period": "2026-07-03", "value": 8265},
+        {"period": "2026-07-10", "value": 8025},
+        {"period": "2026-07-17", "value": 7792},
+        {"period": "2026-07-24", "value": 7141}
+      ],
+      "title": "Commercial Crude Oil (Excl. Lease Stock)",
+      "unit": "thousand barrels"
+    },
+    {
+      "area": "PADD 2",
+      "id": "commercial_crude_padd2",
+      "observations": [
+        {"period": "2026-06-12", "value": 97804},
+        {"period": "2026-06-19", "value": 97273},
+        {"period": "2026-06-26", "value": 98058},
+        {"period": "2026-07-03", "value": 97942},
+        {"period": "2026-07-10", "value": 97885},
+        {"period": "2026-07-17", "value": 97068},
+        {"period": "2026-07-24", "value": 96941}
+      ],
+      "title": "Commercial Crude Oil (Excl. Lease Stock)",
+      "unit": "thousand barrels"
+    },
+    {
+      "area": "Cushing, Oklahoma",
+      "id": "commercial_crude_cushing",
+      "observations": [
+        {"period": "2026-06-12", "value": 20034},
+        {"period": "2026-06-19", "value": 18957},
+        {"period": "2026-06-26", "value": 19666},
+        {"period": "2026-07-03", "value": 19614},
+        {"period": "2026-07-10", "value": 20044},
+        {"period": "2026-07-17", "value": 19370},
+        {"period": "2026-07-24", "value": 18599}
+      ],
+      "title": "Commercial Crude Oil (Excl. Lease Stock)",
+      "unit": "thousand barrels"
+    },
+    {
+      "area": "PADD 3",
+      "id": "commercial_crude_padd3",
+      "observations": [
+        {"period": "2026-06-12", "value": 243814},
+        {"period": "2026-06-19", "value": 239835},
+        {"period": "2026-06-26", "value": 237498},
+        {"period": "2026-07-03", "value": 237212},
+        {"period": "2026-07-10", "value": 235123},
+        {"period": "2026-07-17", "value": 239799},
+        {"period": "2026-07-24", "value": 233284}
+      ],
+      "title": "Commercial Crude Oil (Excl. Lease Stock)",
+      "unit": "thousand barrels"
+    },
+    {
+      "area": "PADD 4",
+      "id": "commercial_crude_padd4",
+      "observations": [
+        {"period": "2026-06-12", "value": 23512},
+        {"period": "2026-06-19", "value": 22983},
+        {"period": "2026-06-26", "value": 22568},
+        {"period": "2026-07-03", "value": 22645},
+        {"period": "2026-07-10", "value": 22485},
+        {"period": "2026-07-17", "value": 22244},
+        {"period": "2026-07-24", "value": 22187}
+      ],
+      "title": "Commercial Crude Oil (Excl. Lease Stock)",
+      "unit": "thousand barrels"
+    },
+    {
+      "area": "PADD 5",
+      "id": "commercial_crude_padd5",
+      "observations": [
+        {"period": "2026-06-12", "value": 45200},
+        {"period": "2026-06-19", "value": 43565},
+        {"period": "2026-06-26", "value": 42313},
+        {"period": "2026-07-03", "value": 45293},
+        {"period": "2026-07-10", "value": 46147},
+        {"period": "2026-07-17", "value": 44772},
+        {"period": "2026-07-24", "value": 44954}
+      ],
+      "title": "Commercial Crude Oil (Excl. Lease Stock)",
+      "unit": "thousand barrels"
+    },
+    {
+      "area": "US",
+      "id": "total_crude_petroleum_including_spr",
+      "observations": [
+        {"period": "2026-06-12", "value": 1543113},
+        {"period": "2026-06-19", "value": 1533511},
+        {"period": "2026-06-26", "value": 1527225},
+        {"period": "2026-07-03", "value": 1517075},
+        {"period": "2026-07-10", "value": 1527349},
+        {"period": "2026-07-17", "value": 1533850},
+        {"period": "2026-07-24", "value": 1526350}
+      ],
+      "title": "Total Crude Oil and Petroleum Products (Incl. SPR)",
+      "unit": "thousand barrels"
+    },
+    {
+      "area": "US",
+      "id": "total_crude_petroleum_excluding_spr",
+      "observations": [
+        {"period": "2026-06-12", "value": 1202862},
+        {"period": "2026-06-19", "value": 1202320},
+        {"period": "2026-06-26", "value": 1201570},
+        {"period": "2026-07-03", "value": 1197586},
+        {"period": "2026-07-10", "value": 1210845},
+        {"period": "2026-07-17", "value": 1222403},
+        {"period": "2026-07-24", "value": 1218700}
+      ],
+      "title": "Total Crude Oil and Petroleum Products (Excl. SPR)",
+      "unit": "thousand barrels"
+    },
+    {
+      "area": "US",
+      "id": "crude_including_spr",
+      "observations": [
+        {"period": "2026-06-12", "value": 758473},
+        {"period": "2026-06-19", "value": 743325},
+        {"period": "2026-06-26", "value": 734014},
+        {"period": "2026-07-03", "value": 730846},
+        {"period": "2026-07-10", "value": 726169},
+        {"period": "2026-07-17", "value": 723122},
+        {"period": "2026-07-24", "value": 712158}
+      ],
+      "title": "Crude Oil (Including SPR)",
+      "unit": "thousand barrels"
+    },
+    {
+      "area": "US",
+      "id": "spr",
+      "observations": [
+        {"period": "2026-06-12", "value": 340251},
+        {"period": "2026-06-19", "value": 331191},
+        {"period": "2026-06-26", "value": 325655},
+        {"period": "2026-07-03", "value": 319489},
+        {"period": "2026-07-10", "value": 316504},
+        {"period": "2026-07-17", "value": 311447},
+        {"period": "2026-07-24", "value": 307650}
+      ],
+      "title": "Strategic Petroleum Reserve",
+      "unit": "thousand barrels"
+    }
+  ],
+  "source": {
+    "commercial_crude_url": "https://www.eia.gov/dnav/pet/PET_STOC_WSTK_A_EPC0_SAX_MBBL_W.htm",
+    "frequency": "weekly",
+    "latest_period_confirmed": "2026-07-24",
+    "publisher": "U.S. Energy Information Administration (EIA)",
+    "release_date_confirmed": "2026-07-29",
+    "retrieval_method": "EIA public DNav tables; values transcribed only from the official tables confirmed during this run",
+    "rights_note": "Factual observations from the U.S. EIA; consult the EIA website for source notes and reuse terms.",
+    "unit": "thousand barrels",
+    "us_stocks_url": "https://www.eia.gov/dnav/pet/pet_stoc_wstk_dcu_nus_w.htm"
+  }
+}
