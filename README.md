@@ -103,6 +103,20 @@ workflow: [`.github/workflows/eia-data.yml`](.github/workflows/eia-data.yml)
 
 これは現在の週次EIAブリーフとは別の研究資産です。特に `src/stats.py` では、原油との相関、risk-adjusted return、rolling correlation等を比較できます。
 
+### 過去の探索図
+
+以下は旧READMEで紹介していた探索的価格分析の図です。現在のEIA週次データや現在の投資判断を表すものではなく、過去の研究成果として保持します。
+
+![4-Year Rolling Sharpe Ratio](output/4-year_rolling_sharpe_ratio.png)
+
+![Correlation Heatmap of All Stocks](output/correlation_heatmap.png)
+
+![4-Year Rolling Annual Returns](output/4-year_rolling_annual_returns.png)
+
+![Rolling Correlation with Crude Oil Futures](output/rolling_correlation_with_crude_oil_futures.png)
+
+![Stock Selection: Oil Correlation vs Sharpe Ratio](output/stock_selection_oil_correlation_vs_sharpe_ratio.png)
+
 ## 次に顧客仕様へ変えられる部分
 
 現在のcoreは、監視系列とthresholdを外部設定にしています。そのため、PoCでは主に次を顧客ごとに変えられます。
