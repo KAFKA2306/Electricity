@@ -1,88 +1,120 @@
-# 石油関連asset価格分析snapshot
+# Oil — 石油在庫の変化を「読む」ための週次ブリーフ
 
-> **状態: 過去に作成された探索的market-price分析です。現在の企業財務、投資適性、推奨銘柄を示すものではありません。**
+**EIAの週次石油データを、監視対象・変化量・アラート・出所が1画面で分かるブリーフに変換します。**
 
-このリポジトリは、原油先物、石油関連企業、商社、電力、海運、化学、航空、energy ETF、為替の価格系列をyfinanceから取得し、return・volatility・Sharpe ratio・correlation等を可視化した研究snapshotです。
+原油や石油製品のデータは公開されていても、毎週必要なのは「全部の表」ではなく、**自分が見ている系列で何が動いたか**です。このリポジトリは、U.S. Energy Information Administration (EIA) の検証済みsnapshotから、設定した系列だけを抽出し、前週差・前週比・直近平均との差・閾値アラートを自動生成します。
 
-## 現在確認できる構成
+## 顧客に返す価値
 
-| パス | 役割 |
+| やりたいこと | このリポジトリが返すもの |
 |---|---|
-| `src/yf.py` | yfinanceからcloseを取得し、日本株をUSD/JPYでドル換算 |
-| `src/stats.py` | return、volatility、Sharpe ratio、correlation、rolling指標を計算 |
-| `data/oil.csv` | 過去に保存された価格data |
-| `output/` | 過去に生成されたchart・report |
+| 毎週、大量の石油統計から重要な変化だけ見たい | watchlistに登録した系列だけを週次ブリーフ化 |
+| 「増えた / 減った」だけでなく変化の大きさを比較したい | 最新値、前週差、前週比、設定期間平均との差 |
+| 大きな変化を見落としたくない | 系列ごとの絶対値・変化率thresholdによるalert |
+| 数字の出所を後から確認したい | EIA公式URL、観測日、snapshot、SHA-256を保持 |
+| 人・システムの両方で使いたい | `brief.html` / `brief.md` / `brief.json` を同時生成 |
 
-`src/yf.py`は2000年1月1日から実行時点までのデータ取得を試みます。ただし、committed dataや画像が現在まで更新されていること、同じ結果を再生成できることは確認していません。
+つまり、**「データを探す」ためのrepositoryではなく、「今週どこを見るべきか」を短くするためのrepository**です。
 
-## 分析対象
+## こんな人向け
 
-対象には次のような異なるinstrumentが混在します。
+- 原油・石油製品の在庫変化を定点観測するリサーチ担当
+- エネルギー関連企業や市場を追う投資・分析担当
+- 公開データから定例レポートを作るデータ担当
+- EIAデータを社内監視やdashboardへ組み込みたい開発者
 
-- WTI・Brent原油先物
-- 米国・日本の石油関連企業
-- 総合商社、電力、海運、化学、航空会社
-- energy・oil service ETF
-- USD/JPY
+## まず試す
 
-これは探索的比較用の集合であり、同一asset class・同一通貨・同一risk構造のcross-sectional universeではありません。
+```bash
+python scripts/build_weekly_brief.py \
+  --watchlist config/watchlists/weekly-petroleum-sample.json \
+  --output build/weekly-brief
+```
 
-## 旧READMEの結論について
+生成物:
 
-旧READMEは、特定企業のSharpe ratioや原油相関を固定値で示し、risk管理、事業多角化、安定性、投資適性まで解釈していました。これらは次の理由から、現在有効な企業評価や投資結論として使用できません。
+```text
+build/weekly-brief/
+├── brief.html   # 人がそのまま読む
+├── brief.md     # GitHub / Slack等へ転記しやすい
+└── brief.json   # API・agent・dashboardへ渡しやすい
+```
 
-- data as-ofと生成commitが明示されていない
-- 価格系列だけでは財務、事業構成、hedge、規制、資本政策を識別できない
-- Sharpe ratioのrisk-free rate、return頻度、欠損処理、評価期間が正準契約として固定されていない
-- tickerの上場廃止、社名変更、株式分割、配当調整、survivorship biasをpoint-in-timeで管理していない
-- 異なるasset classと通貨を単純比較している
+ブリーフでは各系列について次を計算します。
 
-したがって、旧READMEの固定数値と投資上の断定は撤回します。既存画像は過去の探索結果としてのみ扱ってください。
+- 最新観測値
+- 直前観測からの変化量
+- 直前観測からの変化率
+- 設定したcomparison window平均との差
+- threshold超過の有無と理由
+- EIA公式source URL
 
-## データ処理上の制約
+履歴不足・0除算・未知の系列などは推測で補完せず、計算不能として扱います。
 
-### yfinance
+## 自分用の監視に変える
 
-yfinanceは便利な研究用interfaceですが、企業・取引所・data vendorの公式開示そのものではありません。API応答、schema、価格補正、取得可能期間が変わる可能性があります。
+`config/watchlists/*.json` で、監視したい系列とalert条件を設定できます。
 
-### 為替換算
+```json
+{
+  "comparison_window": 4,
+  "series": [
+    {
+      "id": "...",
+      "label": "...",
+      "absolute_change_threshold": 5000,
+      "percentage_change_threshold": 2.0
+    }
+  ]
+}
+```
 
-日本株のcloseを同日のUSD/JPY closeで除算しています。企業の報告通貨、海外売上、hedge、intraday timingを反映したeconomic exposureではありません。
+用途に応じて、**「何を見るか」と「どの変化を通知対象にするか」**をコード本体から分離できます。
 
-### 欠損処理
+## 現在、実装済みの範囲
 
-取得後にforward fillを行います。休日が異なる市場間では、異なる時点の価格を同じ行で比較する可能性があります。
+GitHub Actions の `EIA data integrity` workflowでは、clean checkoutから次を検証しています。
 
-### financial analysisではない
+- EIA由来の配布データ: **11系列 / 99観測**
+- weekly brief sample: **7系列**
+- snapshot SHA-256とfile hashの検証
+- `brief.json` / `brief.md` / `brief.html` の生成
+- 各brief系列のEIA公式URL保持
+- unit test と smoke test
 
-repository名や旧READMEの表現にかかわらず、中心はmarket-price analysisです。財務諸表、cash flow、reserve、production、refining margin、hedge、debt等を統合した企業財務modelではありません。
+workflow: [`.github/workflows/eia-data.yml`](.github/workflows/eia-data.yml)
 
-## 現在できること
+サービス仕様: [`docs/services/weekly-petroleum-brief.md`](docs/services/weekly-petroleum-brief.md)
 
-- 過去の価格分析codeと図表を研究履歴として確認する
-- asset universeや指標候補を再設計する材料にする
-- provenance・point-in-time設計が必要な箇所を把握する
+## データの根拠
 
-## 現在できないこと
+一次情報は **U.S. Energy Information Administration (EIA)** です。
 
-- 最新の原油・企業価格を保証する
-- 現在の企業財務・事業品質を評価する
-- 銘柄推奨、portfolio配分、risk管理効果を証明する
-- 再現可能なperformance比較やbacktestを提供する
+- Weekly Petroleum Status Report: https://www.eia.gov/petroleum/supply/weekly/
+- Release Schedule: https://www.eia.gov/petroleum/supply/weekly/schedule.php
+- Petroleum & Other Liquids Data: https://www.eia.gov/petroleum/data.php
+- EIA Open Data: https://www.eia.gov/opendata/
 
-## 再開する場合の最低条件
+このrepositoryの価値はEIAデータそのものではなく、**監視対象の設定、決定的な差分計算、alert、共有形式、provenanceを一つの反復可能なworkflowにまとめること**です。
 
-1. instrument masterにticker、取引所、asset class、通貨、valid periodを保持する
-2. raw dataへprovider、取得日時、timezone、adjustment、hashを付与する
-3. return、volatility、Sharpe ratio、beta、correlationの数式と期間を固定する
-4. market holidayとmissing data policyをtestする
-5. survivorship biasとcorporate actionをpoint-in-timeで扱う
-6. 企業財務を扱う場合は公式開示と価格dataを分離する
-7. chartごとにdata as-of、code commit、設定hashを表示する
-8. clean environmentからCIで再生成する
+## 価格分析の研究資産
 
-## 注意
+`src/` と `data/oil.csv` には、原油先物、石油関連企業、商社、電力、海運、化学、航空、energy ETF、為替を横断して、return・volatility・Sharpe ratio・correlation・rolling指標を比較する過去の探索コードも残しています。
 
-このリポジトリのcode・data・画像・文章は投資助言ではありません。過去の相関やrisk-adjusted returnは将来のperformanceを保証しません。
+これは現在の週次EIAブリーフとは別の研究資産です。特に `src/stats.py` では、原油との相関、risk-adjusted return、rolling correlation等を比較できます。
 
-**README監査日:** 2026-08-05
+## 次に顧客仕様へ変えられる部分
+
+現在のcoreは、監視系列とthresholdを外部設定にしています。そのため、PoCでは主に次を顧客ごとに変えられます。
+
+1. 監視するEIA系列
+2. alertの絶対値・変化率threshold
+3. comparison window
+4. HTML / Markdown / JSONの利用先
+5. 生成後のdelivery adapter
+
+監視したい系列や出力先がある場合は、[Issue](https://github.com/KAFKA2306/oil/issues/new) に公開可能な要件だけを書いてください。
+
+## Scope
+
+このrepositoryが直接観測・計算するのは、主にEIAの石油在庫系列とmarket-price研究データです。価格予測、企業財務の評価、証券の推奨は生成しません。過去の相関やrisk-adjusted returnを将来のperformance保証として扱わないでください。
