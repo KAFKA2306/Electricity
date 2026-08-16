@@ -46,7 +46,7 @@ jobs:
               assert hashlib.sha256(data).hexdigest() == meta['sha256']
           PY
       - name: Build weekly petroleum brief sample
-        run: python scripts/build_weekly_brief.py --output build/weekly-brief
+        run: python scripts/build_weekly_brief.py --snapshot "$GITHUB_WORKSPACE/data/official/eia-weekly-stocks-2026-08-16.json" --output build/weekly-brief
       - name: Audit weekly brief sample
         run: |
           python - <<'PY'
@@ -55,6 +55,8 @@ jobs:
           root = Path('build/weekly-brief')
           brief = json.loads((root/'brief.json').read_text())
           assert len(brief['series']) == 7
+          assert brief['latest_period'] == '2026-08-07'
+          assert brief['release_date'] == '2026-08-12'
           assert brief['source_publisher'] == 'U.S. Energy Information Administration (EIA)'
           assert len(brief['source_snapshot_sha256']) == 64
           assert (root/'brief.md').stat().st_size > 0
