@@ -46,7 +46,7 @@ jobs:
               assert hashlib.sha256(data).hexdigest() == meta['sha256']
           PY
       - name: Build weekly petroleum brief sample
-        run: python scripts/build_weekly_brief.py --snapshot data/official/eia-weekly-stocks-2026-08-16.json --output build/weekly-brief
+        run: python scripts/build_weekly_brief.py --snapshot "$GITHUB_WORKSPACE/data/official/eia-weekly-stocks-2026-08-16.json" --output build/weekly-brief
       - name: Audit weekly brief sample
         run: |
           python - <<'PY'
