@@ -14,7 +14,7 @@ SPEC.loader.exec_module(MODULE)
 
 class WeeklyBriefTest(unittest.TestCase):
     def setUp(self):
-        self.snapshot_path = ROOT / "data" / "official" / "eia-weekly-stocks-2026-08-08.json"
+        self.snapshot_path = ROOT / "data" / "official" / "eia-weekly-stocks-2026-08-16.json"
         self.watchlist_path = ROOT / "config" / "watchlists" / "weekly-petroleum-sample.json"
         self.snapshot = MODULE.load_json(self.snapshot_path)
         self.watchlist = MODULE.load_json(self.watchlist_path)
@@ -23,8 +23,8 @@ class WeeklyBriefTest(unittest.TestCase):
         first = MODULE.build_brief(self.snapshot_path, self.snapshot, self.watchlist)
         second = MODULE.build_brief(self.snapshot_path, self.snapshot, self.watchlist)
         self.assertEqual(MODULE.canonical_json(first), MODULE.canonical_json(second))
-        self.assertEqual(first["latest_period"], "2026-07-17")
-        self.assertEqual(first["release_date"], "2026-07-22")
+        self.assertEqual(first["latest_period"], "2026-08-07")
+        self.assertEqual(first["release_date"], "2026-08-12")
         self.assertEqual(len(first["series"]), 7)
         self.assertEqual(len(first["source_snapshot_sha256"]), 64)
         self.assertTrue(first["source_snapshot"].startswith("data/official/"))
@@ -33,11 +33,11 @@ class WeeklyBriefTest(unittest.TestCase):
     def test_known_us_weekly_change(self):
         brief = MODULE.build_brief(self.snapshot_path, self.snapshot, self.watchlist)
         us = next(item for item in brief["series"] if item["series_id"] == "commercial_crude_us")
-        self.assertEqual(us["latest_value"], 411675)
-        self.assertEqual(us["weekly_change"], {"status": "OK", "value": 2010, "reason": None})
+        self.assertEqual(us["latest_value"], 424410)
+        self.assertEqual(us["weekly_change"], {"status": "OK", "value": 17423, "reason": None})
         self.assertEqual(us["weekly_percentage_change"]["status"], "OK")
-        self.assertAlmostEqual(us["weekly_percentage_change"]["value"], 0.491, places=3)
-        self.assertAlmostEqual(us["versus_window_average"]["value"], 1411.0, places=3)
+        self.assertAlmostEqual(us["weekly_percentage_change"]["value"], 4.281, places=3)
+        self.assertAlmostEqual(us["versus_window_average"]["value"], 12515.0, places=3)
 
     def test_zero_denominator_is_not_computable(self):
         snapshot = copy.deepcopy(self.snapshot)
