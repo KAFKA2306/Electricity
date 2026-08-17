@@ -1,5 +1,7 @@
 # Oil — 石油在庫の変化を「読む」ための週次ブリーフ
 
+[![EIA data integrity](https://github.com/KAFKA2306/oil/actions/workflows/eia-data.yml/badge.svg)](https://github.com/KAFKA2306/oil/actions/workflows/eia-data.yml)
+
 **EIAの週次石油データを、監視対象・変化量・アラート・出所が1画面で分かるブリーフに変換します。**
 
 原油や石油製品のデータは公開されていても、毎週必要なのは「全部の表」ではなく、**自分が見ている系列で何が動いたか**です。このリポジトリは、U.S. Energy Information Administration (EIA) の検証済みsnapshotから、設定した系列だけを抽出し、前週差・前週比・直近平均との差・閾値アラートを自動生成します。
