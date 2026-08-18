@@ -89,22 +89,6 @@ jobs:
           python-version: '3.12'
       - name: Install XLSX reader
         run: python -m pip install openpyxl==3.1.5
-      - name: Inspect selected EBA schema
-        run: |
-          python - <<'PY'
-          import io, json, urllib.request, zipfile
-          url='https://www.eia.gov/opendata/bulk/EBA.zip'
-          req=urllib.request.Request(url, headers={'User-Agent':'energy-supply/1.0 github.com/KAFKA2306/oil'})
-          raw=urllib.request.urlopen(req, timeout=120).read()
-          with zipfile.ZipFile(io.BytesIO(raw)) as z:
-              name=[n for n in z.namelist() if n.lower().endswith('.txt')][0]
-              with z.open(name) as f:
-                  for line in f:
-                      if b'EBA.US48-ALL.D.H' in line:
-                          obj=json.loads(line)
-                          print(json.dumps({'series_id':obj.get('series_id'),'f':obj.get('f'),'units':obj.get('units'),'data_sample':(obj.get('data') or [])[:3]}))
-                          break
-          PY
       - name: Collect 90+ days demand, generation, and latest capacity
         run: python scripts/update_eia_electricity.py --evidence-dir build/electricity/evidence --api-dir build/electricity/api
       - name: Audit live outputs
