@@ -20,7 +20,7 @@ def hourly_series(series_id="EBA.US48-ALL.D.H", days=91):
         "series_id": series_id,
         "name": "test",
         "f": "H",
-        "data": [[(start + timedelta(hours=i)).strftime("%Y%m%dT%HZ"), 10] for i in range(days * 24)],
+        "data": [[(start + timedelta(hours=i)).strftime("%Y%m%dT%H"), "10"] for i in range(days * 24)],
     }
 
 
