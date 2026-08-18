@@ -1,0 +1,25 @@
+{
+  "dataset": "generation",
+  "day_boundary": "UTC",
+  "first_period": "2026-04-20",
+  "frequency": "daily",
+  "geography": {
+    "id": "US48",
+    "level": "region",
+    "name": "United States Lower 48"
+  },
+  "kind": "actual",
+  "last_period": "2026-08-16",
+  "latest": {
+    "hour_count": 24,
+    "period": "2026-08-16",
+    "value": 13666614.68
+  },
+  "period_count": 119,
+  "schema_version": 1,
+  "series_id": "EBA.US48-ALL.NG.H",
+  "source_evidence": "data/electricity/official/eia-electricity-34ead56c352a7f5b.json",
+  "source_evidence_sha256": "5055e42395184eb58b28cf005a00cb7277e28d86c3e06ff363838e4580545d14",
+  "source_url": "https://www.eia.gov/opendata/bulk/EBA.zip",
+  "unit": "megawatthours"
+}
