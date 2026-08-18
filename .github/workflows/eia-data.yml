@@ -23,9 +23,9 @@ jobs:
         with:
           python-version: '3.12'
       - name: Compile
-        run: python -m py_compile scripts/build_eia_api.py scripts/build_weekly_brief.py scripts/collect_eia_electricity.py tests/test_eia_api.py tests/test_weekly_brief.py tests/test_eia_electricity.py
+        run: python -m py_compile scripts/build_eia_api.py scripts/build_weekly_brief.py scripts/collect_eia_electricity.py scripts/update_eia_electricity.py tests/test_eia_api.py tests/test_weekly_brief.py tests/test_eia_electricity.py tests/test_eia_electricity_views.py
       - name: Unit tests
-        run: python -m unittest tests.test_eia_api tests.test_weekly_brief tests.test_eia_electricity -v
+        run: python -m unittest tests.test_eia_api tests.test_weekly_brief tests.test_eia_electricity tests.test_eia_electricity_views -v
       - name: Build distribution
         run: python scripts/build_eia_api.py --output build/api/v1
       - name: Smoke test distribution
@@ -77,3 +77,45 @@ jobs:
         run: |
           rm -rf build __pycache__ scripts/__pycache__ tests/__pycache__
           test -z "$(git status --porcelain --untracked-files=all)"
+
+  electricity-live:
+    if: github.event_name == 'pull_request' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Install XLSX reader
+        run: python -m pip install openpyxl==3.1.5
+      - name: Collect 90+ days demand, generation, and latest capacity
+        run: python scripts/update_eia_electricity.py --evidence-dir build/electricity/evidence --api-dir build/electricity/api
+      - name: Audit live outputs
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root = Path('build/electricity/api')
+          index = json.loads((root/'index.json').read_text())
+          assert set(index['datasets']) == {'demand', 'generation', 'capacity'}
+          for name in ('demand', 'generation'):
+              view = json.loads((root/f'{name}.json').read_text())
+              assert view['period_count'] >= 90
+              assert view['kind'] == 'actual'
+              assert view['unit'] == 'megawatthours'
+              assert view['day_boundary'] == 'UTC'
+              assert view['geography']['id'] == 'US48'
+              assert view['source_url'] == 'https://www.eia.gov/opendata/bulk/EBA.zip'
+          capacity = json.loads((root/'capacity.json').read_text())
+          assert capacity['operating']['generator_count'] > 0
+          assert capacity['operating']['net_summer_capacity_mw'] > 0
+          assert capacity['planned']['generator_count'] > 0
+          assert capacity['retired']['generator_count'] > 0
+          assert capacity['source_url'].startswith('https://www.eia.gov/electricity/data/eia860m/xls/')
+          PY
+      - uses: actions/upload-artifact@v7
+        with:
+          name: eia-electricity-live
+          path: build/electricity
+          retention-days: 30

@@ -1,0 +1,59 @@
+name: EIA electricity source
+
+on:
+  schedule:
+    - cron: '17 12 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/update_eia_electricity.py
+      - .github/workflows/eia-electricity-source.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: eia-electricity-source
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Install XLSX reader
+        run: python -m pip install openpyxl==3.1.5
+      - name: Refresh official electricity evidence
+        run: python scripts/update_eia_electricity.py
+      - name: Validate published views
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root = Path('api/v1/electricity')
+          for name in ('demand', 'generation'):
+              view = json.loads((root/f'{name}.json').read_text())
+              assert view['period_count'] >= 90
+              assert view['kind'] == 'actual'
+              assert view['geography']['id'] == 'US48'
+          capacity = json.loads((root/'capacity.json').read_text())
+          assert capacity['operating']['generator_count'] > 0
+          assert capacity['planned']['generator_count'] > 0
+          assert capacity['retired']['generator_count'] > 0
+          PY
+      - name: Commit changed evidence
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add data/electricity/official api/v1/electricity
+          if git diff --cached --quiet; then
+            echo 'No electricity evidence change.'
+            exit 0
+          fi
+          git commit -m 'data: update EIA electricity evidence'
+          git push
