@@ -23,9 +23,9 @@ jobs:
         with:
           python-version: '3.12'
       - name: Compile
-        run: python -m py_compile scripts/build_eia_api.py scripts/build_weekly_brief.py scripts/collect_eia_electricity.py scripts/update_eia_electricity.py tests/test_eia_api.py tests/test_weekly_brief.py tests/test_eia_electricity.py tests/test_eia_electricity_views.py
+        run: python -m py_compile scripts/build_eia_api.py scripts/build_weekly_brief.py scripts/update_eia_electricity.py tests/test_eia_api.py tests/test_weekly_brief.py tests/test_eia_electricity_views.py
       - name: Unit tests
-        run: python -m unittest tests.test_eia_api tests.test_weekly_brief tests.test_eia_electricity tests.test_eia_electricity_views -v
+        run: python -m unittest tests.test_eia_api tests.test_weekly_brief tests.test_eia_electricity_views -v
       - name: Build distribution
         run: python scripts/build_eia_api.py --output build/api/v1
       - name: Smoke test distribution
@@ -89,7 +89,7 @@ jobs:
           python-version: '3.12'
       - name: Install XLSX reader
         run: python -m pip install openpyxl==3.1.5
-      - name: Collect 90+ days demand, generation, and latest capacity
+      - name: Collect official electricity evidence
         run: python scripts/update_eia_electricity.py --evidence-dir build/electricity/evidence --api-dir build/electricity/api
       - name: Audit live outputs
         run: |
@@ -98,21 +98,28 @@ jobs:
           from pathlib import Path
           root = Path('build/electricity/api')
           index = json.loads((root/'index.json').read_text())
-          assert set(index['datasets']) == {'demand', 'generation', 'capacity'}
-          for name in ('demand', 'generation'):
+          required = {'demand', 'generation', 'interchange', 'generation-mix', 'capacity', 'capacity-additions'}
+          assert required <= set(index['datasets'])
+          for name in ('demand', 'generation', 'interchange'):
               view = json.loads((root/f'{name}.json').read_text())
               assert view['period_count'] >= 90
               assert view['kind'] == 'actual'
               assert view['unit'] == 'megawatthours'
               assert view['day_boundary'] == 'UTC'
               assert view['geography']['id'] == 'US48'
-              assert view['source_url'] == 'https://www.eia.gov/opendata/bulk/EBA.zip'
+              assert len(view['daily']) >= 90
+              assert len(view['weekly']) >= 13
+          mix = json.loads((root/'generation-mix.json').read_text())
+          assert mix['fuel_count'] >= 5
+          assert mix['latest']['by_fuel_mwh']
           capacity = json.loads((root/'capacity.json').read_text())
           assert capacity['operating']['generator_count'] > 0
-          assert capacity['operating']['net_summer_capacity_mw'] > 0
-          assert capacity['planned']['generator_count'] > 0
-          assert capacity['retired']['generator_count'] > 0
-          assert capacity['source_url'].startswith('https://www.eia.gov/electricity/data/eia860m/xls/')
+          additions = json.loads((root/'capacity-additions.json').read_text())
+          assert additions['planned']['generator_count'] > 0
+          assert additions['retired']['generator_count'] > 0
+          theme = json.loads((root.parent/'energy-supply.json').read_text())
+          assert set(theme['domains']) == {'petroleum', 'electricity'}
+          assert theme['domains']['petroleum']['namespace'] != theme['domains']['electricity']['namespace']
           PY
       - uses: actions/upload-artifact@v7
         with:

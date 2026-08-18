@@ -36,21 +36,32 @@ jobs:
           import json
           from pathlib import Path
           root = Path('api/v1/electricity')
-          for name in ('demand', 'generation'):
+          index = json.loads((root/'index.json').read_text())
+          required = {'demand', 'generation', 'interchange', 'generation-mix', 'capacity', 'capacity-additions'}
+          assert required <= set(index['datasets'])
+          for name in ('demand', 'generation', 'interchange'):
               view = json.loads((root/f'{name}.json').read_text())
               assert view['period_count'] >= 90
               assert view['kind'] == 'actual'
+              assert view['unit'] == 'megawatthours'
               assert view['geography']['id'] == 'US48'
+              assert len(view['weekly']) >= 13
+          mix = json.loads((root/'generation-mix.json').read_text())
+          assert mix['fuel_count'] >= 5
           capacity = json.loads((root/'capacity.json').read_text())
+          additions = json.loads((root/'capacity-additions.json').read_text())
           assert capacity['operating']['generator_count'] > 0
-          assert capacity['planned']['generator_count'] > 0
-          assert capacity['retired']['generator_count'] > 0
+          assert additions['planned']['generator_count'] > 0
+          assert additions['retired']['generator_count'] > 0
+          theme = json.loads(Path('api/v1/energy-supply.json').read_text())
+          assert set(theme['domains']) == {'petroleum', 'electricity'}
+          assert theme['domains']['petroleum']['namespace'] != theme['domains']['electricity']['namespace']
           PY
       - name: Commit changed evidence
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add data/electricity/official api/v1/electricity
+          git add data/electricity/official api/v1/electricity api/v1/energy-supply.json
           if git diff --cached --quiet; then
             echo 'No electricity evidence change.'
             exit 0
