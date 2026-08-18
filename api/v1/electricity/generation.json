@@ -373,12 +373,12 @@
     {
       "hour_count": 24,
       "period": "2026-07-03",
-      "value": 14695327.268
+      "value": 14695851.47
     },
     {
       "hour_count": 24,
       "period": "2026-07-04",
-      "value": 13841115.421
+      "value": 13841259.719
     },
     {
       "hour_count": 24,
@@ -548,22 +548,22 @@
     {
       "hour_count": 24,
       "period": "2026-08-07",
-      "value": 14656348.716
+      "value": 14656392.832
     },
     {
       "hour_count": 24,
       "period": "2026-08-08",
-      "value": 14288737.92
+      "value": 14289300.215
     },
     {
       "hour_count": 24,
       "period": "2026-08-09",
-      "value": 13986205.95
+      "value": 14016972.95
     },
     {
       "hour_count": 24,
       "period": "2026-08-10",
-      "value": 14657916.28
+      "value": 14661907.28
     },
     {
       "hour_count": 24,
@@ -573,27 +573,27 @@
     {
       "hour_count": 24,
       "period": "2026-08-12",
-      "value": 14541185.62
+      "value": 14541427.62
     },
     {
       "hour_count": 24,
       "period": "2026-08-13",
-      "value": 14559005.48
+      "value": 14559385.48
     },
     {
       "hour_count": 24,
       "period": "2026-08-14",
-      "value": 14477117.24
+      "value": 14476432.24
     },
     {
       "hour_count": 24,
       "period": "2026-08-15",
-      "value": 13754459.45
+      "value": 13754446.45
     },
     {
       "hour_count": 24,
       "period": "2026-08-16",
-      "value": 13666614.68
+      "value": 13654035.68
     }
   ],
   "dataset": "generation",
@@ -610,8 +610,8 @@
   "period_count": 119,
   "schema_version": 1,
   "series_id": "EBA.US48-ALL.NG.H",
-  "source_evidence": "data/electricity/official/eia-electricity-1d416b33a7e39781.json",
-  "source_evidence_sha256": "ef7779455590187009709c753a62fa7852aa87060c8241d4120a0264e59cfd36",
+  "source_evidence": "data/electricity/official/eia-electricity-7123be0da53c8756.json",
+  "source_evidence_sha256": "1910513686cb8b047a237e22b02ec325da3e1798092cb8000bab5ec5338138a8",
   "source_url": "https://www.eia.gov/opendata/bulk/EBA.zip",
   "unit": "megawatthours",
   "weekly": [
@@ -667,7 +667,7 @@
     },
     {
       "day_count": 7,
-      "value": 100034649.847,
+      "value": 100035318.347,
       "week_start": "2026-06-29"
     },
     {
@@ -692,12 +692,12 @@
     },
     {
       "day_count": 7,
-      "value": 99410945.087,
+      "value": 99442318.498,
       "week_start": "2026-08-03"
     },
     {
       "day_count": 7,
-      "value": 100417880.14,
+      "value": 100409216.14,
       "week_start": "2026-08-10"
     }
   ]
