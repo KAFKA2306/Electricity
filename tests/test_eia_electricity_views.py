@@ -1,7 +1,6 @@
 import importlib.util
 import io
 import json
-import tempfile
 import unittest
 import zipfile
 from datetime import datetime, timedelta, timezone
@@ -19,6 +18,7 @@ def hourly_series(series_id="EBA.US48-ALL.D.H", days=91):
     return {
         "series_id": series_id,
         "name": "test",
+        "units": "megawatthours",
         "f": "H",
         "data": [[(start + timedelta(hours=i)).strftime("%Y%m%dT%H"), "10"] for i in range(days * 24)],
     }
@@ -46,12 +46,18 @@ class FakeSheet:
 
 
 class EiaElectricityViewsTest(unittest.TestCase):
-    def test_bulk_extracts_only_required_series(self):
-        demand = hourly_series()
-        generation = hourly_series("EBA.US48-ALL.NG.H")
-        extra = hourly_series("EBA.TEST.EXTRA.H")
-        found = MODULE.read_bulk_series(bulk_zip(extra, demand, generation), set(MODULE.SERIES.values()))
-        self.assertEqual(set(found), set(MODULE.SERIES.values()))
+    def test_bulk_discovers_totals_fuels_and_interchange(self):
+        series = [
+            hourly_series(),
+            hourly_series("EBA.US48-ALL.NG.H"),
+            hourly_series("EBA.US48-ALL.TI.H"),
+            *[hourly_series(f"EBA.US48-ALL.NG.{code}.H") for code in ("COL", "NG", "NUC", "SUN", "WND")],
+            hourly_series("EBA.TEST.EXTRA.H"),
+        ]
+        totals, fuels, interchange = MODULE.read_us48_bulk(bulk_zip(*series))
+        self.assertEqual(set(totals), set(MODULE.TOTAL_SERIES.values()))
+        self.assertEqual(set(fuels), {"COL", "NG", "NUC", "SUN", "WND"})
+        self.assertIn("EBA.US48-ALL.TI.H", interchange)
 
     def test_hourly_actual_is_aggregated_to_ninety_plus_utc_days(self):
         rows = MODULE.daily_actual(hourly_series(), days=91)
@@ -59,16 +65,22 @@ class EiaElectricityViewsTest(unittest.TestCase):
         self.assertEqual(rows[0]["value"], 240)
         self.assertEqual(rows[0]["hour_count"], 24)
 
+    def test_current_and_legacy_hour_formats_are_accepted(self):
+        self.assertEqual(MODULE.parse_hour("20260817T20"), MODULE.parse_hour("20260817T20Z"))
+
     def test_short_history_fails_closed(self):
         with self.assertRaisesRegex(ValueError, ">=90"):
             MODULE.daily_actual(hourly_series(days=89), days=120)
 
+    def test_weekly_aggregate_keeps_day_count(self):
+        rows = MODULE.daily_actual(hourly_series(), days=91)
+        weeks = MODULE.weekly(rows)
+        self.assertEqual(sum(row["day_count"] for row in weeks), 91)
+        self.assertTrue(all(row["value"] > 0 for row in weeks))
+
     def test_latest_860m_link_is_discovered_from_official_index(self):
         html = b'<a href="/electricity/data/eia860m/xls/june_generator2026.xlsx">XLS</a>'
-        self.assertEqual(
-            MODULE.latest_eia860m_url(html),
-            "https://www.eia.gov/electricity/data/eia860m/xls/june_generator2026.xlsx",
-        )
+        self.assertEqual(MODULE.latest_eia860m_url(html), "https://www.eia.gov/electricity/data/eia860m/xls/june_generator2026.xlsx")
 
     def test_worksheet_header_is_discovered_without_fixed_row_number(self):
         records = MODULE.worksheet_records(FakeSheet())
@@ -76,7 +88,7 @@ class EiaElectricityViewsTest(unittest.TestCase):
         self.assertEqual(records[0]["Net Summer Capacity (MW)"], 9)
 
     def test_evidence_identity_ignores_retrieval_time(self):
-        payload = {"retrieved_at": "2026-08-18T00:00:00Z", "actual": {"a": 1}}
+        payload = {"retrieved_at": "2026-08-18T00:00:00Z", "views": {"a": 1}}
         first = MODULE.evidence_name(payload)
         payload["retrieved_at"] = "2026-08-19T00:00:00Z"
         self.assertEqual(first, MODULE.evidence_name(payload))
