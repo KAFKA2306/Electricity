@@ -1,0 +1,15 @@
+{
+  "domains": {
+    "electricity": {
+      "namespace": "electricity",
+      "path": "electricity/index.json"
+    },
+    "petroleum": {
+      "namespace": "petroleum",
+      "path": "latest.json"
+    }
+  },
+  "rule": "Domains are linked by reference only; units and values are never merged.",
+  "schema_version": 1,
+  "theme": "ARK Big Ideas 2026 / Distributed Energy"
+}

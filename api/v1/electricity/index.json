@@ -6,6 +6,12 @@
       "path": "capacity.json",
       "source_url": "https://www.eia.gov/electricity/data/eia860m/xls/june_generator2026.xlsx"
     },
+    "capacity-additions": {
+      "frequency": "monthly",
+      "kind": "reported-inventory",
+      "path": "capacity-additions.json",
+      "source_url": "https://www.eia.gov/electricity/data/eia860m/xls/june_generator2026.xlsx"
+    },
     "demand": {
       "frequency": "daily",
       "kind": "actual",
@@ -17,8 +23,21 @@
       "kind": "actual",
       "path": "generation.json",
       "source_url": "https://www.eia.gov/opendata/bulk/EBA.zip"
+    },
+    "generation-mix": {
+      "frequency": "daily",
+      "kind": "actual",
+      "path": "generation-mix.json",
+      "source_url": "https://www.eia.gov/opendata/bulk/EBA.zip"
+    },
+    "interchange": {
+      "frequency": "daily",
+      "kind": "actual",
+      "path": "interchange.json",
+      "source_url": "https://www.eia.gov/opendata/bulk/EBA.zip"
     }
   },
+  "namespace": "electricity",
   "publisher": "U.S. Energy Information Administration",
   "schema_version": 1
 }

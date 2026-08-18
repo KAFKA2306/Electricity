@@ -1,0 +1,6364 @@
+{
+  "dataset": "generation-mix",
+  "day_boundary": "UTC",
+  "excluded_series": {},
+  "frequency": "daily",
+  "fuel_count": 9,
+  "fuels": {
+    "COL": {
+      "daily": [
+        {
+          "hour_count": 24,
+          "period": "2026-04-20",
+          "value": 1312694.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-21",
+          "value": 1317692.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-22",
+          "value": 1289856.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-23",
+          "value": 1293728.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-24",
+          "value": 1393020.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-25",
+          "value": 1379172.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-26",
+          "value": 1344595.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-27",
+          "value": 1351700.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-28",
+          "value": 1411820.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-29",
+          "value": 1525933.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-30",
+          "value": 1546667.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-01",
+          "value": 1525657.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-02",
+          "value": 1435527.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-03",
+          "value": 1143465.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-04",
+          "value": 1204256.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-05",
+          "value": 1401705.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-06",
+          "value": 1565643.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-07",
+          "value": 1437962.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-08",
+          "value": 1381632.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-09",
+          "value": 1319127.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-10",
+          "value": 1282795.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-11",
+          "value": 1432592.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-12",
+          "value": 1308322.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-13",
+          "value": 1390473.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-14",
+          "value": 1338788.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-15",
+          "value": 1338159.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-16",
+          "value": 1399813.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-17",
+          "value": 1422197.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-18",
+          "value": 1708090.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-19",
+          "value": 1788194.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-20",
+          "value": 1900045.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-21",
+          "value": 1745929.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-22",
+          "value": 1548479.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-23",
+          "value": 1524433.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-24",
+          "value": 1417652.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-25",
+          "value": 1429566.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-26",
+          "value": 1746864.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-27",
+          "value": 1960296.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-28",
+          "value": 1885470.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-29",
+          "value": 1750370.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-30",
+          "value": 1501219.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-31",
+          "value": 1384021.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-01",
+          "value": 1814252.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-02",
+          "value": 1754898.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-03",
+          "value": 1707734.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-04",
+          "value": 1765826.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-05",
+          "value": 1841939.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-06",
+          "value": 1828344.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-07",
+          "value": 1819541.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-08",
+          "value": 1880553.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-09",
+          "value": 1961004.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-10",
+          "value": 1952438.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-11",
+          "value": 2049927.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-12",
+          "value": 2150320.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-13",
+          "value": 1938326.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-14",
+          "value": 1945730.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-15",
+          "value": 2087739.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-16",
+          "value": 1883044.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-17",
+          "value": 1804668.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-18",
+          "value": 1942551.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-19",
+          "value": 1962797.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-20",
+          "value": 1801704.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-21",
+          "value": 1707398.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-22",
+          "value": 2042992.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-23",
+          "value": 2055328.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-24",
+          "value": 2075533.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-25",
+          "value": 2126402.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-26",
+          "value": 2282824.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-27",
+          "value": 2090434.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-28",
+          "value": 1997290.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-29",
+          "value": 2209468.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-30",
+          "value": 2376074.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-01",
+          "value": 2516036.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-02",
+          "value": 2668469.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-03",
+          "value": 2563694.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-04",
+          "value": 2496255.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-05",
+          "value": 2446407.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-06",
+          "value": 2628915.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-07",
+          "value": 2678150.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-08",
+          "value": 2530104.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-09",
+          "value": 2570686.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-10",
+          "value": 2649423.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-11",
+          "value": 2539789.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-12",
+          "value": 2420665.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-13",
+          "value": 2590944.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-14",
+          "value": 2690529.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-15",
+          "value": 2813536.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-16",
+          "value": 2883553.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-17",
+          "value": 2758786.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-18",
+          "value": 2596899.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-19",
+          "value": 2581591.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-20",
+          "value": 2615514.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-21",
+          "value": 2676339.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-22",
+          "value": 2590322.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-23",
+          "value": 2365421.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-24",
+          "value": 2321058.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-25",
+          "value": 2247390.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-26",
+          "value": 2301354.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-27",
+          "value": 2508813.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-28",
+          "value": 2606792.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-29",
+          "value": 2616995.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-30",
+          "value": 2437988.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-31",
+          "value": 2339491.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-01",
+          "value": 2287802.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-02",
+          "value": 2270864.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-03",
+          "value": 2252411.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-04",
+          "value": 2297454.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-05",
+          "value": 2444010.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-06",
+          "value": 2583542.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-07",
+          "value": 2479315.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-08",
+          "value": 2479986.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-09",
+          "value": 2301014.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-10",
+          "value": 2545610.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-11",
+          "value": 2574792.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-12",
+          "value": 2453216.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-13",
+          "value": 2477288.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-14",
+          "value": 2536706.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-15",
+          "value": 2482587.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-16",
+          "value": 2503838.0
+        }
+      ],
+      "dataset": "generation-col",
+      "day_boundary": "UTC",
+      "first_period": "2026-04-20",
+      "frequency": "daily",
+      "geography": {
+        "id": "US48",
+        "level": "region",
+        "name": "United States Lower 48"
+      },
+      "kind": "actual",
+      "last_period": "2026-08-16",
+      "period_count": 119,
+      "schema_version": 1,
+      "series_id": "EBA.US48-ALL.NG.COL.H",
+      "source_url": "https://www.eia.gov/opendata/bulk/EBA.zip",
+      "unit": "megawatthours",
+      "weekly": [
+        {
+          "day_count": 7,
+          "value": 9330757.0,
+          "week_start": "2026-04-20"
+        },
+        {
+          "day_count": 7,
+          "value": 9940769.0,
+          "week_start": "2026-04-27"
+        },
+        {
+          "day_count": 7,
+          "value": 9593120.0,
+          "week_start": "2026-05-04"
+        },
+        {
+          "day_count": 7,
+          "value": 9630344.0,
+          "week_start": "2026-05-11"
+        },
+        {
+          "day_count": 7,
+          "value": 11632822.0,
+          "week_start": "2026-05-18"
+        },
+        {
+          "day_count": 7,
+          "value": 11657806.0,
+          "week_start": "2026-05-25"
+        },
+        {
+          "day_count": 7,
+          "value": 12532534.0,
+          "week_start": "2026-06-01"
+        },
+        {
+          "day_count": 7,
+          "value": 13878298.0,
+          "week_start": "2026-06-08"
+        },
+        {
+          "day_count": 7,
+          "value": 13189901.0,
+          "week_start": "2026-06-15"
+        },
+        {
+          "day_count": 7,
+          "value": 14670803.0,
+          "week_start": "2026-06-22"
+        },
+        {
+          "day_count": 7,
+          "value": 17276403.0,
+          "week_start": "2026-06-29"
+        },
+        {
+          "day_count": 7,
+          "value": 18017732.0,
+          "week_start": "2026-07-06"
+        },
+        {
+          "day_count": 7,
+          "value": 18915838.0,
+          "week_start": "2026-07-13"
+        },
+        {
+          "day_count": 7,
+          "value": 17117398.0,
+          "week_start": "2026-07-20"
+        },
+        {
+          "day_count": 7,
+          "value": 17068745.0,
+          "week_start": "2026-07-27"
+        },
+        {
+          "day_count": 7,
+          "value": 16837732.0,
+          "week_start": "2026-08-03"
+        },
+        {
+          "day_count": 7,
+          "value": 17574037.0,
+          "week_start": "2026-08-10"
+        }
+      ]
+    },
+    "NG": {
+      "daily": [
+        {
+          "hour_count": 24,
+          "period": "2026-04-20",
+          "value": 3610322.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-21",
+          "value": 3697163.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-22",
+          "value": 3646976.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-23",
+          "value": 3544249.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-24",
+          "value": 3880610.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-25",
+          "value": 3864539.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-26",
+          "value": 3718049.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-27",
+          "value": 3767386.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-28",
+          "value": 4071820.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-29",
+          "value": 4246388.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-30",
+          "value": 4366441.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-01",
+          "value": 4115289.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-02",
+          "value": 3643898.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-03",
+          "value": 2988486.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-04",
+          "value": 3055877.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-05",
+          "value": 3563768.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-06",
+          "value": 4257878.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-07",
+          "value": 4040650.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-08",
+          "value": 3853534.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-09",
+          "value": 3600311.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-10",
+          "value": 3489131.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-11",
+          "value": 4142157.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-12",
+          "value": 3973080.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-13",
+          "value": 3887759.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-14",
+          "value": 3687714.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-15",
+          "value": 3585571.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-16",
+          "value": 3456525.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-17",
+          "value": 3536601.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-18",
+          "value": 4207109.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-19",
+          "value": 4672243.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-20",
+          "value": 4888425.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-21",
+          "value": 4561106.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-22",
+          "value": 4156978.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-23",
+          "value": 4083472.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-24",
+          "value": 4002530.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-25",
+          "value": 4006032.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-26",
+          "value": 4383673.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-27",
+          "value": 4990880.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-28",
+          "value": 4916189.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-29",
+          "value": 4572133.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-30",
+          "value": 3928149.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-31",
+          "value": 3776094.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-01",
+          "value": 4773056.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-02",
+          "value": 4827629.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-03",
+          "value": 4667239.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-04",
+          "value": 4692690.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-05",
+          "value": 4925666.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-06",
+          "value": 4910826.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-07",
+          "value": 4647374.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-08",
+          "value": 4813283.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-09",
+          "value": 5022712.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-10",
+          "value": 5218499.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-11",
+          "value": 5601286.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-12",
+          "value": 5811914.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-13",
+          "value": 5167857.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-14",
+          "value": 5008638.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-15",
+          "value": 5264653.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-16",
+          "value": 4730491.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-17",
+          "value": 4690756.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-18",
+          "value": 5097153.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-19",
+          "value": 5186980.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-20",
+          "value": 4626367.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-21",
+          "value": 4277708.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-22",
+          "value": 5025977.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-23",
+          "value": 5203732.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-24",
+          "value": 5072352.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-25",
+          "value": 5091095.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-26",
+          "value": 5048145.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-27",
+          "value": 4624381.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-28",
+          "value": 4442844.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-29",
+          "value": 5096062.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-30",
+          "value": 5544455.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-01",
+          "value": 5809731.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-02",
+          "value": 6100232.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-03",
+          "value": 5955118.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-04",
+          "value": 5669289.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-05",
+          "value": 5563849.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-06",
+          "value": 5870148.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-07",
+          "value": 5925933.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-08",
+          "value": 5916001.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-09",
+          "value": 6181028.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-10",
+          "value": 6267916.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-11",
+          "value": 5775643.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-12",
+          "value": 5673084.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-13",
+          "value": 6093375.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-14",
+          "value": 6353641.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-15",
+          "value": 6680006.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-16",
+          "value": 6616749.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-17",
+          "value": 6256039.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-18",
+          "value": 5797509.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-19",
+          "value": 5768255.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-20",
+          "value": 6061112.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-21",
+          "value": 6459282.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-22",
+          "value": 6464500.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-23",
+          "value": 6014129.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-24",
+          "value": 5835321.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-25",
+          "value": 5686215.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-26",
+          "value": 5732916.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-27",
+          "value": 6417561.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-28",
+          "value": 6581865.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-29",
+          "value": 6444455.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-30",
+          "value": 6159727.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-31",
+          "value": 6130721.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-01",
+          "value": 6023941.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-02",
+          "value": 5863585.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-03",
+          "value": 5908623.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-04",
+          "value": 5940561.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-05",
+          "value": 6181592.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-06",
+          "value": 6509772.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-07",
+          "value": 6572786.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-08",
+          "value": 6381587.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-09",
+          "value": 6081707.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-10",
+          "value": 6551868.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-11",
+          "value": 6577104.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-12",
+          "value": 6433975.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-13",
+          "value": 6335603.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-14",
+          "value": 6353626.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-15",
+          "value": 5950183.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-16",
+          "value": 5988644.0
+        }
+      ],
+      "dataset": "generation-ng",
+      "day_boundary": "UTC",
+      "first_period": "2026-04-20",
+      "frequency": "daily",
+      "geography": {
+        "id": "US48",
+        "level": "region",
+        "name": "United States Lower 48"
+      },
+      "kind": "actual",
+      "last_period": "2026-08-16",
+      "period_count": 119,
+      "schema_version": 1,
+      "series_id": "EBA.US48-ALL.NG.NG.H",
+      "source_url": "https://www.eia.gov/opendata/bulk/EBA.zip",
+      "unit": "megawatthours",
+      "weekly": [
+        {
+          "day_count": 7,
+          "value": 25961908.0,
+          "week_start": "2026-04-20"
+        },
+        {
+          "day_count": 7,
+          "value": 27199708.0,
+          "week_start": "2026-04-27"
+        },
+        {
+          "day_count": 7,
+          "value": 25861149.0,
+          "week_start": "2026-05-04"
+        },
+        {
+          "day_count": 7,
+          "value": 26269407.0,
+          "week_start": "2026-05-11"
+        },
+        {
+          "day_count": 7,
+          "value": 30571863.0,
+          "week_start": "2026-05-18"
+        },
+        {
+          "day_count": 7,
+          "value": 30573150.0,
+          "week_start": "2026-05-25"
+        },
+        {
+          "day_count": 7,
+          "value": 33444480.0,
+          "week_start": "2026-06-01"
+        },
+        {
+          "day_count": 7,
+          "value": 36644189.0,
+          "week_start": "2026-06-08"
+        },
+        {
+          "day_count": 7,
+          "value": 33874108.0,
+          "week_start": "2026-06-15"
+        },
+        {
+          "day_count": 7,
+          "value": 34508526.0,
+          "week_start": "2026-06-22"
+        },
+        {
+          "day_count": 7,
+          "value": 39738736.0,
+          "week_start": "2026-06-29"
+        },
+        {
+          "day_count": 7,
+          "value": 41609753.0,
+          "week_start": "2026-07-06"
+        },
+        {
+          "day_count": 7,
+          "value": 43565574.0,
+          "week_start": "2026-07-13"
+        },
+        {
+          "day_count": 7,
+          "value": 42253475.0,
+          "week_start": "2026-07-20"
+        },
+        {
+          "day_count": 7,
+          "value": 43621855.0,
+          "week_start": "2026-07-27"
+        },
+        {
+          "day_count": 7,
+          "value": 43576628.0,
+          "week_start": "2026-08-03"
+        },
+        {
+          "day_count": 7,
+          "value": 44191003.0,
+          "week_start": "2026-08-10"
+        }
+      ]
+    },
+    "NUC": {
+      "daily": [
+        {
+          "hour_count": 24,
+          "period": "2026-04-20",
+          "value": 1795691.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-21",
+          "value": 1797957.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-22",
+          "value": 1788726.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-23",
+          "value": 1783051.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-24",
+          "value": 1811582.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-25",
+          "value": 1904625.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-26",
+          "value": 1938145.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-27",
+          "value": 1915590.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-28",
+          "value": 1906943.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-29",
+          "value": 1919791.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-30",
+          "value": 1925584.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-01",
+          "value": 1955416.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-02",
+          "value": 1963596.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-03",
+          "value": 1962967.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-04",
+          "value": 1934210.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-05",
+          "value": 1955065.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-06",
+          "value": 1951055.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-07",
+          "value": 1982898.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-08",
+          "value": 2035403.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-09",
+          "value": 2047067.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-10",
+          "value": 2063231.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-11",
+          "value": 2053054.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-12",
+          "value": 2049123.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-13",
+          "value": 2031750.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-14",
+          "value": 2055497.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-15",
+          "value": 2083272.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-16",
+          "value": 2085987.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-17",
+          "value": 2125506.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-18",
+          "value": 2155037.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-19",
+          "value": 2150353.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-20",
+          "value": 2175829.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-21",
+          "value": 2218108.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-22",
+          "value": 2249734.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-23",
+          "value": 2263997.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-24",
+          "value": 2270650.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-25",
+          "value": 2268470.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-26",
+          "value": 2238249.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-27",
+          "value": 2227127.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-28",
+          "value": 2227584.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-29",
+          "value": 2227238.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-30",
+          "value": 2235607.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-31",
+          "value": 2269141.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-01",
+          "value": 2294688.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-02",
+          "value": 2292496.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-03",
+          "value": 2299881.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-04",
+          "value": 2301251.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-05",
+          "value": 2289773.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-06",
+          "value": 2282438.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-07",
+          "value": 2290535.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-08",
+          "value": 2283100.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-09",
+          "value": 2281866.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-10",
+          "value": 2285431.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-11",
+          "value": 2279424.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-12",
+          "value": 2294158.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-13",
+          "value": 2302402.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-14",
+          "value": 2316481.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-15",
+          "value": 2329628.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-16",
+          "value": 2350008.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-17",
+          "value": 2350563.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-18",
+          "value": 2315505.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-19",
+          "value": 2317847.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-20",
+          "value": 2298406.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-21",
+          "value": 2298016.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-22",
+          "value": 2307006.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-23",
+          "value": 2317229.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-24",
+          "value": 2319222.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-25",
+          "value": 2310184.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-26",
+          "value": 2300535.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-27",
+          "value": 2304158.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-28",
+          "value": 2328646.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-29",
+          "value": 2336695.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-30",
+          "value": 2325639.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-01",
+          "value": 2296950.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-02",
+          "value": 2301526.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-03",
+          "value": 2305855.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-04",
+          "value": 2295358.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-05",
+          "value": 2302771.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-06",
+          "value": 2305549.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-07",
+          "value": 2309833.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-08",
+          "value": 2307371.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-09",
+          "value": 2300879.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-10",
+          "value": 2298929.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-11",
+          "value": 2305490.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-12",
+          "value": 2308750.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-13",
+          "value": 2325315.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-14",
+          "value": 2330291.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-15",
+          "value": 2319330.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-16",
+          "value": 2317171.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-17",
+          "value": 2318414.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-18",
+          "value": 2293269.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-19",
+          "value": 2306399.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-20",
+          "value": 2321675.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-21",
+          "value": 2325912.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-22",
+          "value": 2331778.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-23",
+          "value": 2338310.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-24",
+          "value": 2341021.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-25",
+          "value": 2338677.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-26",
+          "value": 2336871.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-27",
+          "value": 2329423.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-28",
+          "value": 2326219.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-29",
+          "value": 2322343.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-30",
+          "value": 2330145.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-31",
+          "value": 2330207.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-01",
+          "value": 2322974.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-02",
+          "value": 2312843.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-03",
+          "value": 2304966.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-04",
+          "value": 2282320.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-05",
+          "value": 2279035.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-06",
+          "value": 2278793.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-07",
+          "value": 2284290.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-08",
+          "value": 2276829.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-09",
+          "value": 2291807.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-10",
+          "value": 2286548.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-11",
+          "value": 2278967.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-12",
+          "value": 2276652.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-13",
+          "value": 2290856.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-14",
+          "value": 2278646.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-15",
+          "value": 2291281.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-16",
+          "value": 2304425.0
+        }
+      ],
+      "dataset": "generation-nuc",
+      "day_boundary": "UTC",
+      "first_period": "2026-04-20",
+      "frequency": "daily",
+      "geography": {
+        "id": "US48",
+        "level": "region",
+        "name": "United States Lower 48"
+      },
+      "kind": "actual",
+      "last_period": "2026-08-16",
+      "period_count": 119,
+      "schema_version": 1,
+      "series_id": "EBA.US48-ALL.NG.NUC.H",
+      "source_url": "https://www.eia.gov/opendata/bulk/EBA.zip",
+      "unit": "megawatthours",
+      "weekly": [
+        {
+          "day_count": 7,
+          "value": 12819777.0,
+          "week_start": "2026-04-20"
+        },
+        {
+          "day_count": 7,
+          "value": 13549887.0,
+          "week_start": "2026-04-27"
+        },
+        {
+          "day_count": 7,
+          "value": 13968929.0,
+          "week_start": "2026-05-04"
+        },
+        {
+          "day_count": 7,
+          "value": 14484189.0,
+          "week_start": "2026-05-11"
+        },
+        {
+          "day_count": 7,
+          "value": 15483708.0,
+          "week_start": "2026-05-18"
+        },
+        {
+          "day_count": 7,
+          "value": 15693416.0,
+          "week_start": "2026-05-25"
+        },
+        {
+          "day_count": 7,
+          "value": 16051062.0,
+          "week_start": "2026-06-01"
+        },
+        {
+          "day_count": 7,
+          "value": 16042862.0,
+          "week_start": "2026-06-08"
+        },
+        {
+          "day_count": 7,
+          "value": 16259973.0,
+          "week_start": "2026-06-15"
+        },
+        {
+          "day_count": 7,
+          "value": 16186980.0,
+          "week_start": "2026-06-22"
+        },
+        {
+          "day_count": 7,
+          "value": 16164794.0,
+          "week_start": "2026-06-29"
+        },
+        {
+          "day_count": 7,
+          "value": 16136801.0,
+          "week_start": "2026-07-06"
+        },
+        {
+          "day_count": 7,
+          "value": 16210189.0,
+          "week_start": "2026-07-13"
+        },
+        {
+          "day_count": 7,
+          "value": 16334244.0,
+          "week_start": "2026-07-20"
+        },
+        {
+          "day_count": 7,
+          "value": 16274154.0,
+          "week_start": "2026-07-27"
+        },
+        {
+          "day_count": 7,
+          "value": 15998040.0,
+          "week_start": "2026-08-03"
+        },
+        {
+          "day_count": 7,
+          "value": 16007375.0,
+          "week_start": "2026-08-10"
+        }
+      ]
+    },
+    "OIL": {
+      "daily": [
+        {
+          "hour_count": 24,
+          "period": "2026-04-20",
+          "value": 20039.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-21",
+          "value": 20329.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-22",
+          "value": 16369.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-23",
+          "value": 16027.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-24",
+          "value": 23617.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-25",
+          "value": 13807.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-26",
+          "value": 9489.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-27",
+          "value": 11550.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-28",
+          "value": 16353.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-29",
+          "value": 22073.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-30",
+          "value": 23191.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-01",
+          "value": 18163.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-02",
+          "value": 13773.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-03",
+          "value": 9851.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-04",
+          "value": 13708.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-05",
+          "value": 20184.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-06",
+          "value": 17869.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-07",
+          "value": 17546.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-08",
+          "value": 15735.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-09",
+          "value": 9473.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-10",
+          "value": 8015.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-11",
+          "value": 12259.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-12",
+          "value": 14783.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-13",
+          "value": 15100.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-14",
+          "value": 14834.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-15",
+          "value": 16534.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-16",
+          "value": 13856.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-17",
+          "value": 16227.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-18",
+          "value": 39952.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-19",
+          "value": 46593.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-20",
+          "value": 36675.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-21",
+          "value": 23057.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-22",
+          "value": 18967.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-23",
+          "value": 13778.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-24",
+          "value": 15276.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-25",
+          "value": 16983.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-26",
+          "value": 16764.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-27",
+          "value": 21946.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-28",
+          "value": 21443.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-29",
+          "value": 16163.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-30",
+          "value": 10487.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-31",
+          "value": 12546.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-01",
+          "value": 14810.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-02",
+          "value": 14902.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-03",
+          "value": 13767.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-04",
+          "value": 14492.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-05",
+          "value": 14838.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-06",
+          "value": 15000.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-07",
+          "value": 14025.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-08",
+          "value": 14148.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-09",
+          "value": 16849.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-10",
+          "value": 19450.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-11",
+          "value": 40810.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-12",
+          "value": 53305.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-13",
+          "value": 34627.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-14",
+          "value": 22350.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-15",
+          "value": 17331.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-16",
+          "value": 13508.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-17",
+          "value": 12669.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-18",
+          "value": 20687.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-19",
+          "value": 14394.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-20",
+          "value": 10249.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-21",
+          "value": 10508.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-22",
+          "value": 17868.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-23",
+          "value": 13576.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-24",
+          "value": 10910.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-25",
+          "value": 13249.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-26",
+          "value": 15892.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-27",
+          "value": 11358.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-28",
+          "value": 11552.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-29",
+          "value": 21641.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-30",
+          "value": 48563.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-01",
+          "value": 64215.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-02",
+          "value": 102938.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-03",
+          "value": 106260.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-04",
+          "value": 88622.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-05",
+          "value": 39369.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-06",
+          "value": 30723.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-07",
+          "value": 20425.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-08",
+          "value": 18925.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-09",
+          "value": 23176.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-10",
+          "value": 25025.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-11",
+          "value": 15095.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-12",
+          "value": 9255.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-13",
+          "value": 13399.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-14",
+          "value": 34216.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-15",
+          "value": 57837.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-16",
+          "value": 53695.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-17",
+          "value": 45837.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-18",
+          "value": 25901.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-19",
+          "value": 15123.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-20",
+          "value": 20960.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-21",
+          "value": 25462.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-22",
+          "value": 20205.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-23",
+          "value": 16921.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-24",
+          "value": 12430.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-25",
+          "value": 10313.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-26",
+          "value": 11226.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-27",
+          "value": 21428.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-28",
+          "value": 17550.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-29",
+          "value": 12006.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-30",
+          "value": 15561.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-31",
+          "value": 13138.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-01",
+          "value": 10714.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-02",
+          "value": 7863.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-03",
+          "value": 11097.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-04",
+          "value": 13895.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-05",
+          "value": 16462.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-06",
+          "value": 25807.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-07",
+          "value": 25929.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-08",
+          "value": 18774.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-09",
+          "value": 33813.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-10",
+          "value": 27586.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-11",
+          "value": 44173.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-12",
+          "value": 24809.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-13",
+          "value": 19178.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-14",
+          "value": 18854.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-15",
+          "value": 15279.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-16",
+          "value": 13608.0
+        }
+      ],
+      "dataset": "generation-oil",
+      "day_boundary": "UTC",
+      "first_period": "2026-04-20",
+      "frequency": "daily",
+      "geography": {
+        "id": "US48",
+        "level": "region",
+        "name": "United States Lower 48"
+      },
+      "kind": "actual",
+      "last_period": "2026-08-16",
+      "period_count": 119,
+      "schema_version": 1,
+      "series_id": "EBA.US48-ALL.NG.OIL.H",
+      "source_url": "https://www.eia.gov/opendata/bulk/EBA.zip",
+      "unit": "megawatthours",
+      "weekly": [
+        {
+          "day_count": 7,
+          "value": 119677.0,
+          "week_start": "2026-04-20"
+        },
+        {
+          "day_count": 7,
+          "value": 114954.0,
+          "week_start": "2026-04-27"
+        },
+        {
+          "day_count": 7,
+          "value": 102530.0,
+          "week_start": "2026-05-04"
+        },
+        {
+          "day_count": 7,
+          "value": 103593.0,
+          "week_start": "2026-05-11"
+        },
+        {
+          "day_count": 7,
+          "value": 194298.0,
+          "week_start": "2026-05-18"
+        },
+        {
+          "day_count": 7,
+          "value": 116332.0,
+          "week_start": "2026-05-25"
+        },
+        {
+          "day_count": 7,
+          "value": 101834.0,
+          "week_start": "2026-06-01"
+        },
+        {
+          "day_count": 7,
+          "value": 201539.0,
+          "week_start": "2026-06-08"
+        },
+        {
+          "day_count": 7,
+          "value": 99346.0,
+          "week_start": "2026-06-15"
+        },
+        {
+          "day_count": 7,
+          "value": 94405.0,
+          "week_start": "2026-06-22"
+        },
+        {
+          "day_count": 7,
+          "value": 471608.0,
+          "week_start": "2026-06-29"
+        },
+        {
+          "day_count": 7,
+          "value": 142624.0,
+          "week_start": "2026-07-06"
+        },
+        {
+          "day_count": 7,
+          "value": 246008.0,
+          "week_start": "2026-07-13"
+        },
+        {
+          "day_count": 7,
+          "value": 117517.0,
+          "week_start": "2026-07-20"
+        },
+        {
+          "day_count": 7,
+          "value": 98260.0,
+          "week_start": "2026-07-27"
+        },
+        {
+          "day_count": 7,
+          "value": 145777.0,
+          "week_start": "2026-08-03"
+        },
+        {
+          "day_count": 7,
+          "value": 163487.0,
+          "week_start": "2026-08-10"
+        }
+      ]
+    },
+    "OTH": {
+      "daily": [
+        {
+          "hour_count": 24,
+          "period": "2026-04-20",
+          "value": 201736.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-21",
+          "value": 200882.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-22",
+          "value": 202361.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-23",
+          "value": 206577.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-24",
+          "value": 196779.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-25",
+          "value": 143136.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-26",
+          "value": 138270.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-27",
+          "value": 148761.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-28",
+          "value": 136206.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-29",
+          "value": 155801.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-30",
+          "value": 161189.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-01",
+          "value": 143693.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-02",
+          "value": 135760.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-03",
+          "value": 123201.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-04",
+          "value": 187062.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-05",
+          "value": 148772.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-06",
+          "value": 130378.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-07",
+          "value": 148981.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-08",
+          "value": 147760.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-09",
+          "value": 136324.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-10",
+          "value": 130520.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-11",
+          "value": 135867.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-12",
+          "value": 138535.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-13",
+          "value": 133616.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-14",
+          "value": 142241.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-15",
+          "value": 135125.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-16",
+          "value": 133726.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-17",
+          "value": 136844.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-18",
+          "value": 150051.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-19",
+          "value": 160046.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-20",
+          "value": 166329.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-21",
+          "value": 141513.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-22",
+          "value": 135686.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-23",
+          "value": 137164.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-24",
+          "value": 128904.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-25",
+          "value": 139941.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-26",
+          "value": 153750.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-27",
+          "value": 142820.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-28",
+          "value": 148669.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-29",
+          "value": 139037.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-30",
+          "value": 126352.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-31",
+          "value": 121822.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-01",
+          "value": 150632.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-02",
+          "value": 148357.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-03",
+          "value": 143120.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-04",
+          "value": 141954.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-05",
+          "value": 150736.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-06",
+          "value": 151332.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-07",
+          "value": 149427.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-08",
+          "value": 163124.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-09",
+          "value": 157759.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-10",
+          "value": 160944.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-11",
+          "value": 176241.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-12",
+          "value": 193567.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-13",
+          "value": 170284.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-14",
+          "value": 175474.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-15",
+          "value": 158612.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-16",
+          "value": 148339.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-17",
+          "value": 160530.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-18",
+          "value": 181844.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-19",
+          "value": 174897.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-20",
+          "value": 167753.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-21",
+          "value": 169157.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-22",
+          "value": 187423.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-23",
+          "value": 191676.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-24",
+          "value": 192917.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-25",
+          "value": 156183.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-26",
+          "value": 176291.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-27",
+          "value": 162509.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-28",
+          "value": 167868.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-29",
+          "value": 194908.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-30",
+          "value": 189823.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-01",
+          "value": 209566.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-02",
+          "value": 226005.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-03",
+          "value": 215205.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-04",
+          "value": 200806.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-05",
+          "value": 198073.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-06",
+          "value": 199931.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-07",
+          "value": 189352.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-08",
+          "value": 194902.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-09",
+          "value": 215811.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-10",
+          "value": 204306.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-11",
+          "value": 180710.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-12",
+          "value": 187022.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-13",
+          "value": 192439.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-14",
+          "value": 156112.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-15",
+          "value": 202532.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-16",
+          "value": 218337.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-17",
+          "value": 177049.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-18",
+          "value": 178570.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-19",
+          "value": 164486.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-20",
+          "value": 190934.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-21",
+          "value": 185499.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-22",
+          "value": 185769.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-23",
+          "value": 179997.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-24",
+          "value": 197190.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-25",
+          "value": 169127.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-26",
+          "value": 172409.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-27",
+          "value": 195820.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-28",
+          "value": 188929.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-29",
+          "value": 170879.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-30",
+          "value": 183243.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-31",
+          "value": 177031.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-01",
+          "value": 171122.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-02",
+          "value": 168268.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-03",
+          "value": 177541.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-04",
+          "value": 185448.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-05",
+          "value": 196613.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-06",
+          "value": 215272.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-07",
+          "value": 212185.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-08",
+          "value": 202665.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-09",
+          "value": 180352.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-10",
+          "value": 197114.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-11",
+          "value": 185860.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-12",
+          "value": 188511.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-13",
+          "value": 212998.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-14",
+          "value": 202256.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-15",
+          "value": 179625.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-16",
+          "value": 177660.0
+        }
+      ],
+      "dataset": "generation-oth",
+      "day_boundary": "UTC",
+      "first_period": "2026-04-20",
+      "frequency": "daily",
+      "geography": {
+        "id": "US48",
+        "level": "region",
+        "name": "United States Lower 48"
+      },
+      "kind": "actual",
+      "last_period": "2026-08-16",
+      "period_count": 119,
+      "schema_version": 1,
+      "series_id": "EBA.US48-ALL.NG.OTH.H",
+      "source_url": "https://www.eia.gov/opendata/bulk/EBA.zip",
+      "unit": "megawatthours",
+      "weekly": [
+        {
+          "day_count": 7,
+          "value": 1289741.0,
+          "week_start": "2026-04-20"
+        },
+        {
+          "day_count": 7,
+          "value": 1004611.0,
+          "week_start": "2026-04-27"
+        },
+        {
+          "day_count": 7,
+          "value": 1029797.0,
+          "week_start": "2026-05-04"
+        },
+        {
+          "day_count": 7,
+          "value": 955954.0,
+          "week_start": "2026-05-11"
+        },
+        {
+          "day_count": 7,
+          "value": 1019693.0,
+          "week_start": "2026-05-18"
+        },
+        {
+          "day_count": 7,
+          "value": 972391.0,
+          "week_start": "2026-05-25"
+        },
+        {
+          "day_count": 7,
+          "value": 1035558.0,
+          "week_start": "2026-06-01"
+        },
+        {
+          "day_count": 7,
+          "value": 1197393.0,
+          "week_start": "2026-06-08"
+        },
+        {
+          "day_count": 7,
+          "value": 1161132.0,
+          "week_start": "2026-06-15"
+        },
+        {
+          "day_count": 7,
+          "value": 1234867.0,
+          "week_start": "2026-06-22"
+        },
+        {
+          "day_count": 7,
+          "value": 1434386.0,
+          "week_start": "2026-06-29"
+        },
+        {
+          "day_count": 7,
+          "value": 1372034.0,
+          "week_start": "2026-07-06"
+        },
+        {
+          "day_count": 7,
+          "value": 1289525.0,
+          "week_start": "2026-07-13"
+        },
+        {
+          "day_count": 7,
+          "value": 1280925.0,
+          "week_start": "2026-07-20"
+        },
+        {
+          "day_count": 7,
+          "value": 1255292.0,
+          "week_start": "2026-07-27"
+        },
+        {
+          "day_count": 7,
+          "value": 1370076.0,
+          "week_start": "2026-08-03"
+        },
+        {
+          "day_count": 7,
+          "value": 1344024.0,
+          "week_start": "2026-08-10"
+        }
+      ]
+    },
+    "SUN": {
+      "daily": [
+        {
+          "hour_count": 24,
+          "period": "2026-04-20",
+          "value": 1013769.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-21",
+          "value": 988991.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-22",
+          "value": 903749.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-23",
+          "value": 973285.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-24",
+          "value": 974021.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-25",
+          "value": 950758.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-26",
+          "value": 856842.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-27",
+          "value": 896831.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-28",
+          "value": 871608.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-29",
+          "value": 824728.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-30",
+          "value": 835752.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-01",
+          "value": 803267.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-02",
+          "value": 1080670.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-03",
+          "value": 1102296.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-04",
+          "value": 1062593.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-05",
+          "value": 842048.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-06",
+          "value": 839535.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-07",
+          "value": 1015116.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-08",
+          "value": 1004753.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-09",
+          "value": 1046112.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-10",
+          "value": 1064506.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-11",
+          "value": 1146381.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-12",
+          "value": 1227499.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-13",
+          "value": 1209153.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-14",
+          "value": 1232295.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-15",
+          "value": 1158791.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-16",
+          "value": 1065449.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-17",
+          "value": 983296.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-18",
+          "value": 946903.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-19",
+          "value": 1032791.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-20",
+          "value": 1005473.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-21",
+          "value": 966097.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-22",
+          "value": 985799.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-23",
+          "value": 929223.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-24",
+          "value": 1039132.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-25",
+          "value": 1088584.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-26",
+          "value": 982244.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-27",
+          "value": 952231.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-28",
+          "value": 1153829.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-29",
+          "value": 1123313.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-30",
+          "value": 1067157.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-31",
+          "value": 1172328.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-01",
+          "value": 1183817.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-02",
+          "value": 1184551.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-03",
+          "value": 1190355.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-04",
+          "value": 1232520.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-05",
+          "value": 1108351.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-06",
+          "value": 1122031.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-07",
+          "value": 1031874.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-08",
+          "value": 1052219.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-09",
+          "value": 1049726.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-10",
+          "value": 1151853.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-11",
+          "value": 1187458.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-12",
+          "value": 1196848.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-13",
+          "value": 1230166.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-14",
+          "value": 1072160.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-15",
+          "value": 1106789.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-16",
+          "value": 1132510.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-17",
+          "value": 1152495.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-18",
+          "value": 1149490.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-19",
+          "value": 1093000.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-20",
+          "value": 1166406.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-21",
+          "value": 1140608.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-22",
+          "value": 1147657.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-23",
+          "value": 1210830.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-24",
+          "value": 1174276.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-25",
+          "value": 1150216.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-26",
+          "value": 1030541.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-27",
+          "value": 1047708.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-28",
+          "value": 1115489.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-29",
+          "value": 1224561.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-30",
+          "value": 1258184.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-01",
+          "value": 1291814.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-02",
+          "value": 1279040.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-03",
+          "value": 1314086.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-04",
+          "value": 1230645.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-05",
+          "value": 1117994.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-06",
+          "value": 1199331.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-07",
+          "value": 1249790.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-08",
+          "value": 1232550.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-09",
+          "value": 1270966.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-10",
+          "value": 1232078.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-11",
+          "value": 1159474.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-12",
+          "value": 1097258.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-13",
+          "value": 985548.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-14",
+          "value": 1072522.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-15",
+          "value": 1095610.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-16",
+          "value": 1025028.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-17",
+          "value": 1083619.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-18",
+          "value": 1164505.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-19",
+          "value": 1163948.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-20",
+          "value": 1181685.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-21",
+          "value": 1169772.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-22",
+          "value": 1203637.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-23",
+          "value": 1219976.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-24",
+          "value": 1143886.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-25",
+          "value": 1129015.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-26",
+          "value": 1164908.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-27",
+          "value": 1183620.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-28",
+          "value": 1156843.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-29",
+          "value": 1218408.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-30",
+          "value": 1297364.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-31",
+          "value": 1224383.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-01",
+          "value": 1066612.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-02",
+          "value": 1090796.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-03",
+          "value": 1252802.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-04",
+          "value": 1224620.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-05",
+          "value": 1208561.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-06",
+          "value": 1101202.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-07",
+          "value": 1157463.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-08",
+          "value": 1197307.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-09",
+          "value": 1163286.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-10",
+          "value": 1088923.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-11",
+          "value": 1059493.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-12",
+          "value": 1041221.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-13",
+          "value": 1063062.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-14",
+          "value": 1047298.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-15",
+          "value": 1098822.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-16",
+          "value": 1104714.0
+        }
+      ],
+      "dataset": "generation-sun",
+      "day_boundary": "UTC",
+      "first_period": "2026-04-20",
+      "frequency": "daily",
+      "geography": {
+        "id": "US48",
+        "level": "region",
+        "name": "United States Lower 48"
+      },
+      "kind": "actual",
+      "last_period": "2026-08-16",
+      "period_count": 119,
+      "schema_version": 1,
+      "series_id": "EBA.US48-ALL.NG.SUN.H",
+      "source_url": "https://www.eia.gov/opendata/bulk/EBA.zip",
+      "unit": "megawatthours",
+      "weekly": [
+        {
+          "day_count": 7,
+          "value": 6661415.0,
+          "week_start": "2026-04-20"
+        },
+        {
+          "day_count": 7,
+          "value": 6415152.0,
+          "week_start": "2026-04-27"
+        },
+        {
+          "day_count": 7,
+          "value": 6874663.0,
+          "week_start": "2026-05-04"
+        },
+        {
+          "day_count": 7,
+          "value": 8022864.0,
+          "week_start": "2026-05-11"
+        },
+        {
+          "day_count": 7,
+          "value": 6905418.0,
+          "week_start": "2026-05-18"
+        },
+        {
+          "day_count": 7,
+          "value": 7539686.0,
+          "week_start": "2026-05-25"
+        },
+        {
+          "day_count": 7,
+          "value": 8053499.0,
+          "week_start": "2026-06-01"
+        },
+        {
+          "day_count": 7,
+          "value": 7940430.0,
+          "week_start": "2026-06-08"
+        },
+        {
+          "day_count": 7,
+          "value": 7941298.0,
+          "week_start": "2026-06-15"
+        },
+        {
+          "day_count": 7,
+          "value": 7876717.0,
+          "week_start": "2026-06-22"
+        },
+        {
+          "day_count": 7,
+          "value": 8716324.0,
+          "week_start": "2026-06-29"
+        },
+        {
+          "day_count": 7,
+          "value": 8441447.0,
+          "week_start": "2026-07-06"
+        },
+        {
+          "day_count": 7,
+          "value": 7590780.0,
+          "week_start": "2026-07-13"
+        },
+        {
+          "day_count": 7,
+          "value": 8212879.0,
+          "week_start": "2026-07-20"
+        },
+        {
+          "day_count": 7,
+          "value": 8238026.0,
+          "week_start": "2026-07-27"
+        },
+        {
+          "day_count": 7,
+          "value": 8305241.0,
+          "week_start": "2026-08-03"
+        },
+        {
+          "day_count": 7,
+          "value": 7503533.0,
+          "week_start": "2026-08-10"
+        }
+      ]
+    },
+    "UNK": {
+      "daily": [
+        {
+          "hour_count": 24,
+          "period": "2026-04-20",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-21",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-22",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-23",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-24",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-25",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-26",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-27",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-28",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-29",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-30",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-01",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-02",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-03",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-04",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-05",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-06",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-07",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-08",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-09",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-10",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-11",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-12",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-13",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-14",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-15",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-16",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-17",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-18",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-19",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-20",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-21",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-22",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-23",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-24",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-25",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-26",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-27",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-28",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-29",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-30",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-31",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-01",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-02",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-03",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-04",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-05",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-06",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-07",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-08",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-09",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-10",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-11",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-12",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-13",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-14",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-15",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-16",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-17",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-18",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-19",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-20",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-21",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-22",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-23",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-24",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-25",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-26",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-27",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-28",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-29",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-30",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-01",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-02",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-03",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-04",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-05",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-06",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-07",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-08",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-09",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-10",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-11",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-12",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-13",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-14",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-15",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-16",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-17",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-18",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-19",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-20",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-21",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-22",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-23",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-24",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-25",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-26",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-27",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-28",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-29",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-30",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-31",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-01",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-02",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-03",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-04",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-05",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-06",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-07",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-08",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-09",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-10",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-11",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-12",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-13",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-14",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-15",
+          "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-16",
+          "value": 0.0
+        }
+      ],
+      "dataset": "generation-unk",
+      "day_boundary": "UTC",
+      "first_period": "2026-04-20",
+      "frequency": "daily",
+      "geography": {
+        "id": "US48",
+        "level": "region",
+        "name": "United States Lower 48"
+      },
+      "kind": "actual",
+      "last_period": "2026-08-16",
+      "period_count": 119,
+      "schema_version": 1,
+      "series_id": "EBA.US48-ALL.NG.UNK.H",
+      "source_url": "https://www.eia.gov/opendata/bulk/EBA.zip",
+      "unit": "megawatthours",
+      "weekly": [
+        {
+          "day_count": 7,
+          "value": 0.0,
+          "week_start": "2026-04-20"
+        },
+        {
+          "day_count": 7,
+          "value": 0.0,
+          "week_start": "2026-04-27"
+        },
+        {
+          "day_count": 7,
+          "value": 0.0,
+          "week_start": "2026-05-04"
+        },
+        {
+          "day_count": 7,
+          "value": 0.0,
+          "week_start": "2026-05-11"
+        },
+        {
+          "day_count": 7,
+          "value": 0.0,
+          "week_start": "2026-05-18"
+        },
+        {
+          "day_count": 7,
+          "value": 0.0,
+          "week_start": "2026-05-25"
+        },
+        {
+          "day_count": 7,
+          "value": 0.0,
+          "week_start": "2026-06-01"
+        },
+        {
+          "day_count": 7,
+          "value": 0.0,
+          "week_start": "2026-06-08"
+        },
+        {
+          "day_count": 7,
+          "value": 0.0,
+          "week_start": "2026-06-15"
+        },
+        {
+          "day_count": 7,
+          "value": 0.0,
+          "week_start": "2026-06-22"
+        },
+        {
+          "day_count": 7,
+          "value": 0.0,
+          "week_start": "2026-06-29"
+        },
+        {
+          "day_count": 7,
+          "value": 0.0,
+          "week_start": "2026-07-06"
+        },
+        {
+          "day_count": 7,
+          "value": 0.0,
+          "week_start": "2026-07-13"
+        },
+        {
+          "day_count": 7,
+          "value": 0.0,
+          "week_start": "2026-07-20"
+        },
+        {
+          "day_count": 7,
+          "value": 0.0,
+          "week_start": "2026-07-27"
+        },
+        {
+          "day_count": 7,
+          "value": 0.0,
+          "week_start": "2026-08-03"
+        },
+        {
+          "day_count": 7,
+          "value": 0.0,
+          "week_start": "2026-08-10"
+        }
+      ]
+    },
+    "WAT": {
+      "daily": [
+        {
+          "hour_count": 24,
+          "period": "2026-04-20",
+          "value": 748253.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-21",
+          "value": 747353.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-22",
+          "value": 709868.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-23",
+          "value": 694327.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-24",
+          "value": 742136.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-25",
+          "value": 712729.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-26",
+          "value": 692720.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-27",
+          "value": 706860.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-28",
+          "value": 684927.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-29",
+          "value": 753206.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-30",
+          "value": 766526.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-01",
+          "value": 759190.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-02",
+          "value": 732430.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-03",
+          "value": 702956.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-04",
+          "value": 722736.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-05",
+          "value": 745268.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-06",
+          "value": 698270.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-07",
+          "value": 680827.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-08",
+          "value": 706958.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-09",
+          "value": 702356.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-10",
+          "value": 695753.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-11",
+          "value": 733635.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-12",
+          "value": 761618.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-13",
+          "value": 719212.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-14",
+          "value": 700780.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-15",
+          "value": 723271.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-16",
+          "value": 697288.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-17",
+          "value": 668028.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-18",
+          "value": 725375.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-19",
+          "value": 766818.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-20",
+          "value": 737675.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-21",
+          "value": 706638.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-22",
+          "value": 712037.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-23",
+          "value": 688373.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-24",
+          "value": 653201.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-25",
+          "value": 721693.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-26",
+          "value": 766023.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-27",
+          "value": 776193.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-28",
+          "value": 803101.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-29",
+          "value": 769649.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-30",
+          "value": 665751.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-31",
+          "value": 711051.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-01",
+          "value": 810272.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-02",
+          "value": 804643.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-03",
+          "value": 812202.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-04",
+          "value": 791773.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-05",
+          "value": 805719.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-06",
+          "value": 762649.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-07",
+          "value": 698250.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-08",
+          "value": 807394.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-09",
+          "value": 796356.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-10",
+          "value": 758794.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-11",
+          "value": 807147.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-12",
+          "value": 803309.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-13",
+          "value": 765296.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-14",
+          "value": 751328.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-15",
+          "value": 769739.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-16",
+          "value": 756134.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-17",
+          "value": 748681.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-18",
+          "value": 765459.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-19",
+          "value": 772386.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-20",
+          "value": 686732.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-21",
+          "value": 662930.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-22",
+          "value": 724261.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-23",
+          "value": 763384.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-24",
+          "value": 804227.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-25",
+          "value": 784777.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-26",
+          "value": 777030.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-27",
+          "value": 664324.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-28",
+          "value": 615382.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-29",
+          "value": 691703.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-30",
+          "value": 761599.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-01",
+          "value": 800837.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-02",
+          "value": 812412.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-03",
+          "value": 791351.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-04",
+          "value": 746187.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-05",
+          "value": 695879.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-06",
+          "value": 697824.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-07",
+          "value": 710171.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-08",
+          "value": 674000.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-09",
+          "value": 686605.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-10",
+          "value": 712077.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-11",
+          "value": 672989.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-12",
+          "value": 633483.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-13",
+          "value": 677799.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-14",
+          "value": 691012.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-15",
+          "value": 691148.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-16",
+          "value": 705076.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-17",
+          "value": 652940.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-18",
+          "value": 610827.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-19",
+          "value": 594148.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-20",
+          "value": 638226.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-21",
+          "value": 645374.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-22",
+          "value": 665877.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-23",
+          "value": 660263.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-24",
+          "value": 683831.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-25",
+          "value": 649670.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-26",
+          "value": 611476.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-27",
+          "value": 653313.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-28",
+          "value": 665766.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-29",
+          "value": 635239.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-30",
+          "value": 630169.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-31",
+          "value": 661095.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-01",
+          "value": 644856.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-02",
+          "value": 590365.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-03",
+          "value": 609788.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-04",
+          "value": 649313.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-05",
+          "value": 670036.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-06",
+          "value": 684033.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-07",
+          "value": 694211.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-08",
+          "value": 658655.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-09",
+          "value": 613035.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-10",
+          "value": 652000.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-11",
+          "value": 667546.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-12",
+          "value": 647156.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-13",
+          "value": 640293.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-14",
+          "value": 638634.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-15",
+          "value": 600189.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-16",
+          "value": 575003.0
+        }
+      ],
+      "dataset": "generation-wat",
+      "day_boundary": "UTC",
+      "first_period": "2026-04-20",
+      "frequency": "daily",
+      "geography": {
+        "id": "US48",
+        "level": "region",
+        "name": "United States Lower 48"
+      },
+      "kind": "actual",
+      "last_period": "2026-08-16",
+      "period_count": 119,
+      "schema_version": 1,
+      "series_id": "EBA.US48-ALL.NG.WAT.H",
+      "source_url": "https://www.eia.gov/opendata/bulk/EBA.zip",
+      "unit": "megawatthours",
+      "weekly": [
+        {
+          "day_count": 7,
+          "value": 5047386.0,
+          "week_start": "2026-04-20"
+        },
+        {
+          "day_count": 7,
+          "value": 5106095.0,
+          "week_start": "2026-04-27"
+        },
+        {
+          "day_count": 7,
+          "value": 4952168.0,
+          "week_start": "2026-05-04"
+        },
+        {
+          "day_count": 7,
+          "value": 5003832.0,
+          "week_start": "2026-05-11"
+        },
+        {
+          "day_count": 7,
+          "value": 4990117.0,
+          "week_start": "2026-05-18"
+        },
+        {
+          "day_count": 7,
+          "value": 5213461.0,
+          "week_start": "2026-05-25"
+        },
+        {
+          "day_count": 7,
+          "value": 5485508.0,
+          "week_start": "2026-06-01"
+        },
+        {
+          "day_count": 7,
+          "value": 5489624.0,
+          "week_start": "2026-06-08"
+        },
+        {
+          "day_count": 7,
+          "value": 5162061.0,
+          "week_start": "2026-06-15"
+        },
+        {
+          "day_count": 7,
+          "value": 5133385.0,
+          "week_start": "2026-06-22"
+        },
+        {
+          "day_count": 7,
+          "value": 5299968.0,
+          "week_start": "2026-06-29"
+        },
+        {
+          "day_count": 7,
+          "value": 4787149.0,
+          "week_start": "2026-07-06"
+        },
+        {
+          "day_count": 7,
+          "value": 4622950.0,
+          "week_start": "2026-07-13"
+        },
+        {
+          "day_count": 7,
+          "value": 4554717.0,
+          "week_start": "2026-07-20"
+        },
+        {
+          "day_count": 7,
+          "value": 4480803.0,
+          "week_start": "2026-07-27"
+        },
+        {
+          "day_count": 7,
+          "value": 4579071.0,
+          "week_start": "2026-08-03"
+        },
+        {
+          "day_count": 7,
+          "value": 4420821.0,
+          "week_start": "2026-08-10"
+        }
+      ]
+    },
+    "WND": {
+      "daily": [
+        {
+          "hour_count": 24,
+          "period": "2026-04-20",
+          "value": 1308437.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-21",
+          "value": 1473217.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-22",
+          "value": 1819395.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-23",
+          "value": 2053244.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-24",
+          "value": 1546187.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-25",
+          "value": 1202840.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-26",
+          "value": 1224642.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-27",
+          "value": 1778767.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-28",
+          "value": 1563516.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-29",
+          "value": 1124236.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-04-30",
+          "value": 876678.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-01",
+          "value": 838479.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-02",
+          "value": 636024.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-03",
+          "value": 1479839.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-04",
+          "value": 1935983.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-05",
+          "value": 1779886.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-06",
+          "value": 1093074.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-07",
+          "value": 1017000.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-08",
+          "value": 1178039.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-09",
+          "value": 1240948.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-10",
+          "value": 1331361.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-11",
+          "value": 1012102.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-12",
+          "value": 1445112.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-13",
+          "value": 1511833.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-14",
+          "value": 1822553.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-15",
+          "value": 1962725.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-16",
+          "value": 1885848.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-17",
+          "value": 2126610.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-18",
+          "value": 2039608.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-19",
+          "value": 1806256.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-20",
+          "value": 1002292.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-21",
+          "value": 967850.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-22",
+          "value": 1270538.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-23",
+          "value": 946037.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-24",
+          "value": 904473.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-25",
+          "value": 1106656.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-26",
+          "value": 1265738.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-27",
+          "value": 796244.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-28",
+          "value": 775376.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-29",
+          "value": 1132229.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-30",
+          "value": 1736532.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-05-31",
+          "value": 1478138.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-01",
+          "value": 970590.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-02",
+          "value": 1229041.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-03",
+          "value": 1071382.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-04",
+          "value": 1042125.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-05",
+          "value": 1004363.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-06",
+          "value": 1028926.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-07",
+          "value": 1409281.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-08",
+          "value": 1569137.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-09",
+          "value": 1658098.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-10",
+          "value": 2035466.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-11",
+          "value": 1847870.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-12",
+          "value": 1382625.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-13",
+          "value": 1573597.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-14",
+          "value": 1402425.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-15",
+          "value": 690517.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-16",
+          "value": 1155852.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-17",
+          "value": 1758354.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-18",
+          "value": 1699186.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-19",
+          "value": 1154281.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-20",
+          "value": 1077346.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-21",
+          "value": 1450439.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-22",
+          "value": 1170560.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-23",
+          "value": 1030708.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-24",
+          "value": 1072129.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-25",
+          "value": 1180619.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-26",
+          "value": 1246759.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-27",
+          "value": 1708972.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-28",
+          "value": 2034587.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-29",
+          "value": 2145600.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-06-30",
+          "value": 2037838.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-01",
+          "value": 1764570.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-02",
+          "value": 1427012.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-03",
+          "value": 1383998.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-04",
+          "value": 1069999.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-05",
+          "value": 660869.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-06",
+          "value": 689015.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-07",
+          "value": 767190.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-08",
+          "value": 1118572.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-09",
+          "value": 1202841.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-10",
+          "value": 1025696.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-11",
+          "value": 901884.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-12",
+          "value": 885200.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-13",
+          "value": 806131.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-14",
+          "value": 822459.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-15",
+          "value": 825468.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-16",
+          "value": 872787.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-17",
+          "value": 1141810.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-18",
+          "value": 1291615.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-19",
+          "value": 892912.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-20",
+          "value": 965488.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-21",
+          "value": 1212972.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-22",
+          "value": 891680.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-23",
+          "value": 899759.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-24",
+          "value": 1034245.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-25",
+          "value": 1058816.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-26",
+          "value": 1155046.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-27",
+          "value": 1289567.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-28",
+          "value": 1117455.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-29",
+          "value": 970166.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-30",
+          "value": 1137217.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-07-31",
+          "value": 1332647.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-01",
+          "value": 1254898.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-02",
+          "value": 947154.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-03",
+          "value": 1310001.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-04",
+          "value": 1367272.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-05",
+          "value": 1056702.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-06",
+          "value": 1001966.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-07",
+          "value": 1169092.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-08",
+          "value": 1019144.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-09",
+          "value": 1284772.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-10",
+          "value": 1260660.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-11",
+          "value": 1319615.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-12",
+          "value": 1369528.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-13",
+          "value": 1451853.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-14",
+          "value": 1358317.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-15",
+          "value": 1097664.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-16",
+          "value": 948953.0
+        }
+      ],
+      "dataset": "generation-wnd",
+      "day_boundary": "UTC",
+      "first_period": "2026-04-20",
+      "frequency": "daily",
+      "geography": {
+        "id": "US48",
+        "level": "region",
+        "name": "United States Lower 48"
+      },
+      "kind": "actual",
+      "last_period": "2026-08-16",
+      "period_count": 119,
+      "schema_version": 1,
+      "series_id": "EBA.US48-ALL.NG.WND.H",
+      "source_url": "https://www.eia.gov/opendata/bulk/EBA.zip",
+      "unit": "megawatthours",
+      "weekly": [
+        {
+          "day_count": 7,
+          "value": 10627962.0,
+          "week_start": "2026-04-20"
+        },
+        {
+          "day_count": 7,
+          "value": 8297539.0,
+          "week_start": "2026-04-27"
+        },
+        {
+          "day_count": 7,
+          "value": 9576291.0,
+          "week_start": "2026-05-04"
+        },
+        {
+          "day_count": 7,
+          "value": 11766783.0,
+          "week_start": "2026-05-11"
+        },
+        {
+          "day_count": 7,
+          "value": 8937054.0,
+          "week_start": "2026-05-18"
+        },
+        {
+          "day_count": 7,
+          "value": 8290913.0,
+          "week_start": "2026-05-25"
+        },
+        {
+          "day_count": 7,
+          "value": 7755708.0,
+          "week_start": "2026-06-01"
+        },
+        {
+          "day_count": 7,
+          "value": 11469218.0,
+          "week_start": "2026-06-08"
+        },
+        {
+          "day_count": 7,
+          "value": 8985975.0,
+          "week_start": "2026-06-15"
+        },
+        {
+          "day_count": 7,
+          "value": 9444334.0,
+          "week_start": "2026-06-22"
+        },
+        {
+          "day_count": 7,
+          "value": 10489886.0,
+          "week_start": "2026-06-29"
+        },
+        {
+          "day_count": 7,
+          "value": 6590398.0,
+          "week_start": "2026-07-06"
+        },
+        {
+          "day_count": 7,
+          "value": 6653182.0,
+          "week_start": "2026-07-13"
+        },
+        {
+          "day_count": 7,
+          "value": 7218006.0,
+          "week_start": "2026-07-20"
+        },
+        {
+          "day_count": 7,
+          "value": 8049104.0,
+          "week_start": "2026-07-27"
+        },
+        {
+          "day_count": 7,
+          "value": 8208949.0,
+          "week_start": "2026-08-03"
+        },
+        {
+          "day_count": 7,
+          "value": 8806590.0,
+          "week_start": "2026-08-10"
+        }
+      ]
+    }
+  },
+  "geography": {
+    "id": "US48",
+    "level": "region",
+    "name": "United States Lower 48"
+  },
+  "kind": "actual",
+  "latest": {
+    "by_fuel_mwh": {
+      "COL": 2503838.0,
+      "NG": 5988644.0,
+      "NUC": 2304425.0,
+      "OIL": 13608.0,
+      "OTH": 177660.0,
+      "SUN": 1104714.0,
+      "UNK": 0.0,
+      "WAT": 575003.0,
+      "WND": 948953.0
+    },
+    "period": "2026-08-16",
+    "share": {
+      "COL": 0.18387798,
+      "NG": 0.43979674,
+      "NUC": 0.1692334,
+      "OIL": 0.00099935,
+      "OTH": 0.01304708,
+      "SUN": 0.08112848,
+      "UNK": 0.0,
+      "WAT": 0.04222733,
+      "WND": 0.06968964
+    },
+    "total_mwh": 13616845.0
+  },
+  "schema_version": 1,
+  "source_evidence": "data/electricity/official/eia-electricity-1d416b33a7e39781.json",
+  "source_evidence_sha256": "ef7779455590187009709c753a62fa7852aa87060c8241d4120a0264e59cfd36",
+  "source_url": "https://www.eia.gov/opendata/bulk/EBA.zip",
+  "unit": "megawatthours"
+}

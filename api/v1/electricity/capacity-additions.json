@@ -1,46 +1,7 @@
 {
-  "dataset": "capacity",
+  "dataset": "capacity-additions",
   "frequency": "monthly",
-  "geography": {
-    "coverage": "United States and Puerto Rico where reported",
-    "level": "generator"
-  },
   "kind": "reported-inventory",
-  "operating": {
-    "by_technology_net_summer_mw": {
-      "All Other": 1468.7000000000003,
-      "Batteries": 51462.00000000012,
-      "Coal Integrated Gasification Combined Cycle": 555.0,
-      "Conventional Hydroelectric": 79976.20000000029,
-      "Conventional Steam Coal": 168621.49999999994,
-      "Flywheels": 47.0,
-      "Geothermal": 2683.899999999999,
-      "Hydroelectric Pumped Storage": 23075.100000000002,
-      "Landfill Gas": 1490.099999999978,
-      "Municipal Solid Waste": 1891.4000000000003,
-      "Natural Gas Fired Combined Cycle": 295309.49999999994,
-      "Natural Gas Fired Combustion Turbine": 136487.59999999995,
-      "Natural Gas Internal Combustion Engine": 7199.699999999809,
-      "Natural Gas Steam Turbine": 76150.40000000008,
-      "Natural Gas with Compressed Air Storage": 25.0,
-      "Nuclear": 98423.90000000001,
-      "Offshore Wind Turbine": 971.3,
-      "Onshore Wind Turbine": 164185.0,
-      "Other Gases": 1772.3,
-      "Other Natural Gas": 337.40000000000015,
-      "Other Waste Biomass": 578.6999999999999,
-      "Petroleum Coke": 1311.3,
-      "Petroleum Liquids": 26363.99999999965,
-      "Solar Photovoltaic": 163071.39999999863,
-      "Solar Thermal with Energy Storage": 405.6,
-      "Solar Thermal without Energy Storage": 986.4,
-      "Unknown": 2.2,
-      "Wood/Wood Waste Biomass": 7135.300000000001
-    },
-    "generator_count": 28197,
-    "nameplate_capacity_mw": 1404855.7,
-    "net_summer_capacity_mw": 1311987.9
-  },
   "planned": {
     "by_technology_net_summer_mw": {
       "All Other": 133.3,
