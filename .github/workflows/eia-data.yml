@@ -23,9 +23,9 @@ jobs:
         with:
           python-version: '3.12'
       - name: Compile
-        run: python -m py_compile scripts/build_eia_api.py scripts/build_weekly_brief.py scripts/collect_eia_electricity.py tests/test_eia_api.py tests/test_weekly_brief.py tests/test_eia_electricity.py
+        run: python -m py_compile scripts/build_eia_api.py scripts/build_weekly_brief.py scripts/collect_eia_electricity.py scripts/update_eia_electricity.py tests/test_eia_api.py tests/test_weekly_brief.py tests/test_eia_electricity.py tests/test_eia_electricity_views.py
       - name: Unit tests
-        run: python -m unittest tests.test_eia_api tests.test_weekly_brief tests.test_eia_electricity -v
+        run: python -m unittest tests.test_eia_api tests.test_weekly_brief tests.test_eia_electricity tests.test_eia_electricity_views -v
       - name: Build distribution
         run: python scripts/build_eia_api.py --output build/api/v1
       - name: Smoke test distribution
@@ -77,3 +77,41 @@ jobs:
         run: |
           rm -rf build __pycache__ scripts/__pycache__ tests/__pycache__
           test -z "$(git status --porcelain --untracked-files=all)"
+
+  electricity-live:
+    if: github.event_name == 'pull_request' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      EIA_API_KEY: ${{ secrets.EIA_API_KEY }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Collect 90+ days demand, generation, and latest capacity
+        run: python scripts/update_eia_electricity.py --raw-dir build/electricity/raw --api-dir build/electricity/api
+      - name: Audit live outputs
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root = Path('build/electricity/api')
+          index = json.loads((root/'index.json').read_text())
+          assert set(index['datasets']) == {'demand', 'generation', 'capacity'}
+          for name in ('demand', 'generation'):
+              view = json.loads((root/f'{name}.json').read_text())
+              assert view['period_count'] >= 90
+              assert view['measure']['kind'] == 'actual'
+              assert view['geography']['id'] == 'US48'
+              assert view['source_url'].startswith('https://api.eia.gov/v2/')
+              assert 'REDACTED' in view['source_url']
+          capacity = json.loads((root/'capacity.json').read_text())
+          assert capacity['generator_row_count'] > 0
+          assert capacity['totals_mw']['net-summer-capacity-mw'] > 0
+          PY
+      - uses: actions/upload-artifact@v7
+        with:
+          name: eia-electricity-live
+          path: build/electricity
+          retention-days: 30
