@@ -9,11 +9,6 @@
       "daily": [
         {
           "hour_count": 24,
-          "period": "2026-04-21",
-          "value": 1317692.0
-        },
-        {
-          "hour_count": 24,
           "period": "2026-04-22",
           "value": 1289856.0
         },
@@ -570,12 +565,12 @@
         {
           "hour_count": 24,
           "period": "2026-08-11",
-          "value": 2574792.0
+          "value": 2581026.0
         },
         {
           "hour_count": 24,
           "period": "2026-08-12",
-          "value": 2453216.0
+          "value": 2449677.0
         },
         {
           "hour_count": 24,
@@ -585,12 +580,12 @@
         {
           "hour_count": 24,
           "period": "2026-08-14",
-          "value": 2536706.0
+          "value": 2536578.0
         },
         {
           "hour_count": 24,
           "period": "2026-08-15",
-          "value": 2482384.0
+          "value": 2482718.0
         },
         {
           "hour_count": 24,
@@ -601,11 +596,16 @@
           "hour_count": 24,
           "period": "2026-08-17",
           "value": 2626940.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-18",
+          "value": 2540452.0
         }
       ],
       "dataset": "generation-col",
       "day_boundary": "UTC",
-      "first_period": "2026-04-21",
+      "first_period": "2026-04-22",
       "frequency": "daily",
       "geography": {
         "id": "US48",
@@ -613,7 +613,7 @@
         "name": "United States Lower 48"
       },
       "kind": "actual",
-      "last_period": "2026-08-17",
+      "last_period": "2026-08-18",
       "period_count": 119,
       "schema_version": 1,
       "series_id": "EBA.US48-ALL.NG.COL.H",
@@ -621,8 +621,8 @@
       "unit": "megawatthours",
       "weekly": [
         {
-          "day_count": 6,
-          "value": 8018063.0,
+          "day_count": 5,
+          "value": 6700371.0,
           "week_start": "2026-04-20"
         },
         {
@@ -702,23 +702,18 @@
         },
         {
           "day_count": 7,
-          "value": 17566777.0,
+          "value": 17569678.0,
           "week_start": "2026-08-10"
         },
         {
-          "day_count": 1,
-          "value": 2626940.0,
+          "day_count": 2,
+          "value": 5167392.0,
           "week_start": "2026-08-17"
         }
       ]
     },
     "NG": {
       "daily": [
-        {
-          "hour_count": 24,
-          "period": "2026-04-21",
-          "value": 3697163.0
-        },
         {
           "hour_count": 24,
           "period": "2026-04-22",
@@ -1267,52 +1262,57 @@
         {
           "hour_count": 24,
           "period": "2026-08-09",
-          "value": 6086544.0
+          "value": 6086401.0
         },
         {
           "hour_count": 24,
           "period": "2026-08-10",
-          "value": 6553920.0
+          "value": 6553850.0
         },
         {
           "hour_count": 24,
           "period": "2026-08-11",
-          "value": 6577104.0
+          "value": 6604258.0
         },
         {
           "hour_count": 24,
           "period": "2026-08-12",
-          "value": 6433975.0
+          "value": 6432467.0
         },
         {
           "hour_count": 24,
           "period": "2026-08-13",
-          "value": 6335603.0
+          "value": 6337674.0
         },
         {
           "hour_count": 24,
           "period": "2026-08-14",
-          "value": 6353626.0
+          "value": 6354895.0
         },
         {
           "hour_count": 24,
           "period": "2026-08-15",
-          "value": 5950184.0
+          "value": 5951419.0
         },
         {
           "hour_count": 24,
           "period": "2026-08-16",
-          "value": 6046502.0
+          "value": 6047658.0
         },
         {
           "hour_count": 24,
           "period": "2026-08-17",
-          "value": 6626172.0
+          "value": 6628103.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-18",
+          "value": 6605916.0
         }
       ],
       "dataset": "generation-ng",
       "day_boundary": "UTC",
-      "first_period": "2026-04-21",
+      "first_period": "2026-04-22",
       "frequency": "daily",
       "geography": {
         "id": "US48",
@@ -1320,7 +1320,7 @@
         "name": "United States Lower 48"
       },
       "kind": "actual",
-      "last_period": "2026-08-17",
+      "last_period": "2026-08-18",
       "period_count": 119,
       "schema_version": 1,
       "series_id": "EBA.US48-ALL.NG.NG.H",
@@ -1328,8 +1328,8 @@
       "unit": "megawatthours",
       "weekly": [
         {
-          "day_count": 6,
-          "value": 22351586.0,
+          "day_count": 5,
+          "value": 18654423.0,
           "week_start": "2026-04-20"
         },
         {
@@ -1404,28 +1404,23 @@
         },
         {
           "day_count": 7,
-          "value": 43581115.0,
+          "value": 43580972.0,
           "week_start": "2026-08-03"
         },
         {
           "day_count": 7,
-          "value": 44250914.0,
+          "value": 44282221.0,
           "week_start": "2026-08-10"
         },
         {
-          "day_count": 1,
-          "value": 6626172.0,
+          "day_count": 2,
+          "value": 13234019.0,
           "week_start": "2026-08-17"
         }
       ]
     },
     "NUC": {
       "daily": [
-        {
-          "hour_count": 24,
-          "period": "2026-04-21",
-          "value": 1797957.0
-        },
         {
           "hour_count": 24,
           "period": "2026-04-22",
@@ -1984,12 +1979,12 @@
         {
           "hour_count": 24,
           "period": "2026-08-11",
-          "value": 2278967.0
+          "value": 2278723.0
         },
         {
           "hour_count": 24,
           "period": "2026-08-12",
-          "value": 2276652.0
+          "value": 2276810.0
         },
         {
           "hour_count": 24,
@@ -2015,11 +2010,16 @@
           "hour_count": 24,
           "period": "2026-08-17",
           "value": 2307336.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-18",
+          "value": 2304667.0
         }
       ],
       "dataset": "generation-nuc",
       "day_boundary": "UTC",
-      "first_period": "2026-04-21",
+      "first_period": "2026-04-22",
       "frequency": "daily",
       "geography": {
         "id": "US48",
@@ -2027,7 +2027,7 @@
         "name": "United States Lower 48"
       },
       "kind": "actual",
-      "last_period": "2026-08-17",
+      "last_period": "2026-08-18",
       "period_count": 119,
       "schema_version": 1,
       "series_id": "EBA.US48-ALL.NG.NUC.H",
@@ -2035,8 +2035,8 @@
       "unit": "megawatthours",
       "weekly": [
         {
-          "day_count": 6,
-          "value": 11024086.0,
+          "day_count": 5,
+          "value": 9226129.0,
           "week_start": "2026-04-20"
         },
         {
@@ -2116,23 +2116,18 @@
         },
         {
           "day_count": 7,
-          "value": 16007724.0,
+          "value": 16007638.0,
           "week_start": "2026-08-10"
         },
         {
-          "day_count": 1,
-          "value": 2307336.0,
+          "day_count": 2,
+          "value": 4612003.0,
           "week_start": "2026-08-17"
         }
       ]
     },
     "OIL": {
       "daily": [
-        {
-          "hour_count": 24,
-          "period": "2026-04-21",
-          "value": 20329.0
-        },
         {
           "hour_count": 24,
           "period": "2026-04-22",
@@ -2691,12 +2686,12 @@
         {
           "hour_count": 24,
           "period": "2026-08-11",
-          "value": 44173.0
+          "value": 44198.0
         },
         {
           "hour_count": 24,
           "period": "2026-08-12",
-          "value": 24809.0
+          "value": 24805.0
         },
         {
           "hour_count": 24,
@@ -2722,11 +2717,16 @@
           "hour_count": 24,
           "period": "2026-08-17",
           "value": 24583.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-18",
+          "value": 26821.0
         }
       ],
       "dataset": "generation-oil",
       "day_boundary": "UTC",
-      "first_period": "2026-04-21",
+      "first_period": "2026-04-22",
       "frequency": "daily",
       "geography": {
         "id": "US48",
@@ -2734,7 +2734,7 @@
         "name": "United States Lower 48"
       },
       "kind": "actual",
-      "last_period": "2026-08-17",
+      "last_period": "2026-08-18",
       "period_count": 119,
       "schema_version": 1,
       "series_id": "EBA.US48-ALL.NG.OIL.H",
@@ -2742,8 +2742,8 @@
       "unit": "megawatthours",
       "weekly": [
         {
-          "day_count": 6,
-          "value": 99638.0,
+          "day_count": 5,
+          "value": 79309.0,
           "week_start": "2026-04-20"
         },
         {
@@ -2823,23 +2823,18 @@
         },
         {
           "day_count": 7,
-          "value": 162932.0,
+          "value": 162953.0,
           "week_start": "2026-08-10"
         },
         {
-          "day_count": 1,
-          "value": 24583.0,
+          "day_count": 2,
+          "value": 51404.0,
           "week_start": "2026-08-17"
         }
       ]
     },
     "OTH": {
       "daily": [
-        {
-          "hour_count": 24,
-          "period": "2026-04-21",
-          "value": 200882.0
-        },
         {
           "hour_count": 24,
           "period": "2026-04-22",
@@ -3388,22 +3383,22 @@
         {
           "hour_count": 24,
           "period": "2026-08-09",
-          "value": 184805.0
+          "value": 184788.0
         },
         {
           "hour_count": 24,
           "period": "2026-08-10",
-          "value": 198701.0
+          "value": 198693.0
         },
         {
           "hour_count": 24,
           "period": "2026-08-11",
-          "value": 185860.0
+          "value": 190424.0
         },
         {
           "hour_count": 24,
           "period": "2026-08-12",
-          "value": 188511.0
+          "value": 189969.0
         },
         {
           "hour_count": 24,
@@ -3428,12 +3423,17 @@
         {
           "hour_count": 24,
           "period": "2026-08-17",
-          "value": 175973.0
+          "value": 176024.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-18",
+          "value": 186979.0
         }
       ],
       "dataset": "generation-oth",
       "day_boundary": "UTC",
-      "first_period": "2026-04-21",
+      "first_period": "2026-04-22",
       "frequency": "daily",
       "geography": {
         "id": "US48",
@@ -3441,7 +3441,7 @@
         "name": "United States Lower 48"
       },
       "kind": "actual",
-      "last_period": "2026-08-17",
+      "last_period": "2026-08-18",
       "period_count": 119,
       "schema_version": 1,
       "series_id": "EBA.US48-ALL.NG.OTH.H",
@@ -3449,8 +3449,8 @@
       "unit": "megawatthours",
       "weekly": [
         {
-          "day_count": 6,
-          "value": 1088005.0,
+          "day_count": 5,
+          "value": 887123.0,
           "week_start": "2026-04-20"
         },
         {
@@ -3525,28 +3525,23 @@
         },
         {
           "day_count": 7,
-          "value": 1374494.0,
+          "value": 1374477.0,
           "week_start": "2026-08-03"
         },
         {
           "day_count": 7,
-          "value": 1344765.0,
+          "value": 1350779.0,
           "week_start": "2026-08-10"
         },
         {
-          "day_count": 1,
-          "value": 175973.0,
+          "day_count": 2,
+          "value": 363003.0,
           "week_start": "2026-08-17"
         }
       ]
     },
     "SUN": {
       "daily": [
-        {
-          "hour_count": 24,
-          "period": "2026-04-21",
-          "value": 988991.0
-        },
         {
           "hour_count": 24,
           "period": "2026-04-22",
@@ -3920,12 +3915,12 @@
         {
           "hour_count": 24,
           "period": "2026-07-05",
-          "value": 1118152.0
+          "value": 1118450.0
         },
         {
           "hour_count": 24,
           "period": "2026-07-06",
-          "value": 1199331.0
+          "value": 1199359.0
         },
         {
           "hour_count": 24,
@@ -4095,37 +4090,37 @@
         {
           "hour_count": 24,
           "period": "2026-08-09",
-          "value": 1182081.0
+          "value": 1182089.0
         },
         {
           "hour_count": 24,
           "period": "2026-08-10",
-          "value": 1089243.0
+          "value": 1089237.0
         },
         {
           "hour_count": 24,
           "period": "2026-08-11",
-          "value": 1059493.0
+          "value": 1076862.0
         },
         {
           "hour_count": 24,
           "period": "2026-08-12",
-          "value": 1041221.0
+          "value": 1041286.0
         },
         {
           "hour_count": 24,
           "period": "2026-08-13",
-          "value": 1063087.0
+          "value": 1063062.0
         },
         {
           "hour_count": 24,
           "period": "2026-08-14",
-          "value": 1047298.0
+          "value": 1046998.0
         },
         {
           "hour_count": 24,
           "period": "2026-08-15",
-          "value": 1098714.0
+          "value": 1098706.0
         },
         {
           "hour_count": 24,
@@ -4135,12 +4130,17 @@
         {
           "hour_count": 24,
           "period": "2026-08-17",
-          "value": 1214177.0
+          "value": 1213928.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-18",
+          "value": 1230166.0
         }
       ],
       "dataset": "generation-sun",
       "day_boundary": "UTC",
-      "first_period": "2026-04-21",
+      "first_period": "2026-04-22",
       "frequency": "daily",
       "geography": {
         "id": "US48",
@@ -4148,7 +4148,7 @@
         "name": "United States Lower 48"
       },
       "kind": "actual",
-      "last_period": "2026-08-17",
+      "last_period": "2026-08-18",
       "period_count": 119,
       "schema_version": 1,
       "series_id": "EBA.US48-ALL.NG.SUN.H",
@@ -4156,8 +4156,8 @@
       "unit": "megawatthours",
       "weekly": [
         {
-          "day_count": 6,
-          "value": 5647646.0,
+          "day_count": 5,
+          "value": 4658655.0,
           "week_start": "2026-04-20"
         },
         {
@@ -4207,12 +4207,12 @@
         },
         {
           "day_count": 7,
-          "value": 8717695.0,
+          "value": 8717993.0,
           "week_start": "2026-06-29"
         },
         {
           "day_count": 7,
-          "value": 8441447.0,
+          "value": 8441475.0,
           "week_start": "2026-07-06"
         },
         {
@@ -4232,28 +4232,23 @@
         },
         {
           "day_count": 7,
-          "value": 8323874.0,
+          "value": 8323882.0,
           "week_start": "2026-08-03"
         },
         {
           "day_count": 7,
-          "value": 7541106.0,
+          "value": 7558201.0,
           "week_start": "2026-08-10"
         },
         {
-          "day_count": 1,
-          "value": 1214177.0,
+          "day_count": 2,
+          "value": 2444094.0,
           "week_start": "2026-08-17"
         }
       ]
     },
     "UNK": {
       "daily": [
-        {
-          "hour_count": 24,
-          "period": "2026-04-21",
-          "value": 0.0
-        },
         {
           "hour_count": 24,
           "period": "2026-04-22",
@@ -4843,11 +4838,16 @@
           "hour_count": 24,
           "period": "2026-08-17",
           "value": 0.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-18",
+          "value": 0.0
         }
       ],
       "dataset": "generation-unk",
       "day_boundary": "UTC",
-      "first_period": "2026-04-21",
+      "first_period": "2026-04-22",
       "frequency": "daily",
       "geography": {
         "id": "US48",
@@ -4855,7 +4855,7 @@
         "name": "United States Lower 48"
       },
       "kind": "actual",
-      "last_period": "2026-08-17",
+      "last_period": "2026-08-18",
       "period_count": 119,
       "schema_version": 1,
       "series_id": "EBA.US48-ALL.NG.UNK.H",
@@ -4863,7 +4863,7 @@
       "unit": "megawatthours",
       "weekly": [
         {
-          "day_count": 6,
+          "day_count": 5,
           "value": 0.0,
           "week_start": "2026-04-20"
         },
@@ -4948,7 +4948,7 @@
           "week_start": "2026-08-10"
         },
         {
-          "day_count": 1,
+          "day_count": 2,
           "value": 0.0,
           "week_start": "2026-08-17"
         }
@@ -4956,11 +4956,6 @@
     },
     "WAT": {
       "daily": [
-        {
-          "hour_count": 24,
-          "period": "2026-04-21",
-          "value": 747353.0
-        },
         {
           "hour_count": 24,
           "period": "2026-04-22",
@@ -5509,22 +5504,22 @@
         {
           "hour_count": 24,
           "period": "2026-08-09",
-          "value": 613375.0
+          "value": 613757.0
         },
         {
           "hour_count": 24,
           "period": "2026-08-10",
-          "value": 652017.0
+          "value": 652208.0
         },
         {
           "hour_count": 24,
           "period": "2026-08-11",
-          "value": 667546.0
+          "value": 666408.0
         },
         {
           "hour_count": 24,
           "period": "2026-08-12",
-          "value": 647398.0
+          "value": 647953.0
         },
         {
           "hour_count": 24,
@@ -5534,7 +5529,7 @@
         {
           "hour_count": 24,
           "period": "2026-08-14",
-          "value": 639031.0
+          "value": 639030.0
         },
         {
           "hour_count": 24,
@@ -5544,17 +5539,22 @@
         {
           "hour_count": 24,
           "period": "2026-08-16",
-          "value": 572980.0
+          "value": 572994.0
         },
         {
           "hour_count": 24,
           "period": "2026-08-17",
-          "value": 617026.0
+          "value": 617271.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-18",
+          "value": 617417.0
         }
       ],
       "dataset": "generation-wat",
       "day_boundary": "UTC",
-      "first_period": "2026-04-21",
+      "first_period": "2026-04-22",
       "frequency": "daily",
       "geography": {
         "id": "US48",
@@ -5562,7 +5562,7 @@
         "name": "United States Lower 48"
       },
       "kind": "actual",
-      "last_period": "2026-08-17",
+      "last_period": "2026-08-18",
       "period_count": 119,
       "schema_version": 1,
       "series_id": "EBA.US48-ALL.NG.WAT.H",
@@ -5570,8 +5570,8 @@
       "unit": "megawatthours",
       "weekly": [
         {
-          "day_count": 6,
-          "value": 4299133.0,
+          "day_count": 5,
+          "value": 3551780.0,
           "week_start": "2026-04-20"
         },
         {
@@ -5646,28 +5646,23 @@
         },
         {
           "day_count": 7,
-          "value": 4580737.0,
+          "value": 4581119.0,
           "week_start": "2026-08-03"
         },
         {
           "day_count": 7,
-          "value": 4420156.0,
+          "value": 4419777.0,
           "week_start": "2026-08-10"
         },
         {
-          "day_count": 1,
-          "value": 617026.0,
+          "day_count": 2,
+          "value": 1234688.0,
           "week_start": "2026-08-17"
         }
       ]
     },
     "WND": {
       "daily": [
-        {
-          "hour_count": 24,
-          "period": "2026-04-21",
-          "value": 1472667.0
-        },
         {
           "hour_count": 24,
           "period": "2026-04-22",
@@ -6216,12 +6211,12 @@
         {
           "hour_count": 24,
           "period": "2026-08-09",
-          "value": 1284767.0
+          "value": 1284800.0
         },
         {
           "hour_count": 24,
           "period": "2026-08-10",
-          "value": 1260660.0
+          "value": 1260626.0
         },
         {
           "hour_count": 24,
@@ -6246,7 +6241,7 @@
         {
           "hour_count": 24,
           "period": "2026-08-15",
-          "value": 1097467.0
+          "value": 1097476.0
         },
         {
           "hour_count": 24,
@@ -6257,11 +6252,16 @@
           "hour_count": 24,
           "period": "2026-08-17",
           "value": 721959.0
+        },
+        {
+          "hour_count": 24,
+          "period": "2026-08-18",
+          "value": 990629.0
         }
       ],
       "dataset": "generation-wnd",
       "day_boundary": "UTC",
-      "first_period": "2026-04-21",
+      "first_period": "2026-04-22",
       "frequency": "daily",
       "geography": {
         "id": "US48",
@@ -6269,7 +6269,7 @@
         "name": "United States Lower 48"
       },
       "kind": "actual",
-      "last_period": "2026-08-17",
+      "last_period": "2026-08-18",
       "period_count": 119,
       "schema_version": 1,
       "series_id": "EBA.US48-ALL.NG.WND.H",
@@ -6277,8 +6277,8 @@
       "unit": "megawatthours",
       "weekly": [
         {
-          "day_count": 6,
-          "value": 9315735.0,
+          "day_count": 5,
+          "value": 7843068.0,
           "week_start": "2026-04-20"
         },
         {
@@ -6353,17 +6353,17 @@
         },
         {
           "day_count": 7,
-          "value": 8208868.0,
+          "value": 8208901.0,
           "week_start": "2026-08-03"
         },
         {
           "day_count": 7,
-          "value": 8715617.0,
+          "value": 8715592.0,
           "week_start": "2026-08-10"
         },
         {
-          "day_count": 1,
-          "value": 721959.0,
+          "day_count": 2,
+          "value": 1712588.0,
           "week_start": "2026-08-17"
         }
       ]
@@ -6377,33 +6377,33 @@
   "kind": "actual",
   "latest": {
     "by_fuel_mwh": {
-      "COL": 2626940.0,
-      "NG": 6626172.0,
-      "NUC": 2307336.0,
-      "OIL": 24583.0,
-      "OTH": 175973.0,
-      "SUN": 1214177.0,
+      "COL": 2540452.0,
+      "NG": 6605916.0,
+      "NUC": 2304667.0,
+      "OIL": 26821.0,
+      "OTH": 186979.0,
+      "SUN": 1230166.0,
       "UNK": 0.0,
-      "WAT": 617026.0,
-      "WND": 721959.0
+      "WAT": 617417.0,
+      "WND": 990629.0
     },
-    "period": "2026-08-17",
+    "period": "2026-08-18",
     "share": {
-      "COL": 0.1835203,
-      "NG": 0.4629101,
-      "NUC": 0.16119249,
-      "OIL": 0.00171739,
-      "OTH": 0.01229363,
-      "SUN": 0.08482345,
+      "COL": 0.17516678,
+      "NG": 0.4554847,
+      "NUC": 0.15890916,
+      "OIL": 0.00184934,
+      "OTH": 0.01289239,
+      "SUN": 0.08482121,
       "UNK": 0.0,
-      "WAT": 0.04310597,
-      "WND": 0.05043668
+      "WAT": 0.04257154,
+      "WND": 0.06830489
     },
-    "total_mwh": 14314166.0
+    "total_mwh": 14503047.0
   },
   "schema_version": 1,
-  "source_evidence": "data/electricity/official/eia-electricity-b00a48beb00ea479.json",
-  "source_evidence_sha256": "beea98efdc983f46f40ce0856f654c276159dbae2f6e76ce8106417cf947ef13",
+  "source_evidence": "data/electricity/official/eia-electricity-2397026e9ba272b0.json",
+  "source_evidence_sha256": "4b32c0798793b670dcff795d5d79b50a437c763c927ca23e699ce98f66357c99",
   "source_url": "https://www.eia.gov/opendata/bulk/EBA.zip",
   "unit": "megawatthours"
 }
