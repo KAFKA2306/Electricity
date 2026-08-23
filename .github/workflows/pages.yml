@@ -1,0 +1,88 @@
+name: Deploy Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - web/**
+      - api/v1/electricity/**
+      - .github/workflows/pages.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Validate canonical inputs
+        run: |
+          python -m json.tool api/v1/electricity/index.json >/dev/null
+          python -m json.tool api/v1/electricity/metrics.json >/dev/null
+          python -m json.tool api/v1/electricity/demand.json >/dev/null
+          python -m json.tool api/v1/electricity/generation.json >/dev/null
+          python -m json.tool api/v1/electricity/generation-mix.json >/dev/null
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          metrics=json.loads(Path('api/v1/electricity/metrics.json').read_text())['observations']
+          by_metric={row['metric']:row for row in metrics}
+          assert by_metric['electricity_demand']['period']=='daily actual'
+          assert by_metric['net_generation']['period']=='daily actual'
+          assert by_metric['operating_net_summer_capacity']['unit']=='MW'
+          assert by_metric['planned_net_summer_capacity']['unit']=='MW'
+          demand=json.loads(Path('api/v1/electricity/demand.json').read_text())['daily']
+          assert len([r for r in demand if r['hour_count']==24])>=2
+          mix=json.loads(Path('api/v1/electricity/generation-mix.json').read_text())
+          assert mix['day_boundary']=='UTC' and mix['frequency']=='daily' and mix['fuels']
+          PY
+      - name: Build public artifact
+        run: |
+          mkdir -p web/api/v1
+          rm -rf web/api/v1/electricity
+          cp -R api/v1/electricity web/api/v1/electricity
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          Path('web/deployment.json').write_text(json.dumps({'source_commit':os.environ['GITHUB_SHA']},indent=2)+'\n')
+          PY
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: web
+      - id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Verify production revision and API
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          python - <<'PY'
+          import json, os, time
+          from urllib.parse import urljoin
+          from urllib.request import urlopen
+          base=os.environ['PAGE_URL']; expected=os.environ['GITHUB_SHA']; last=None
+          for _ in range(30):
+              try:
+                  with urlopen(urljoin(base,'deployment.json'),timeout=10) as r: dep=json.load(r)
+                  with urlopen(urljoin(base,'api/v1/electricity/metrics.json'),timeout=10) as r: metrics=json.load(r)
+                  with urlopen(base,timeout=10) as r: html=r.read().decode()
+                  assert dep['source_commit']==expected
+                  assert any(x['metric']=='electricity_demand' for x in metrics['observations'])
+                  assert '今日の電力は' in html and 'generation-mix.json' in html
+                  print({'page_url':base,'source_commit':expected})
+                  break
+              except Exception as exc:
+                  last=exc; time.sleep(2)
+          else: raise SystemExit(f'production verification failed: {last}')
+          PY
