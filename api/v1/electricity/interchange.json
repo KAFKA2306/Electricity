@@ -2,11 +2,6 @@
   "daily": [
     {
       "hour_count": 24,
-      "period": "2026-04-27",
-      "value": -44777.0
-    },
-    {
-      "hour_count": 24,
       "period": "2026-04-28",
       "value": 3879.0
     },
@@ -563,42 +558,47 @@
     {
       "hour_count": 24,
       "period": "2026-08-17",
-      "value": -251038.0
+      "value": -253459.0
     },
     {
       "hour_count": 24,
       "period": "2026-08-18",
-      "value": -219757.0
+      "value": -221154.0
     },
     {
       "hour_count": 24,
       "period": "2026-08-19",
-      "value": -236001.0
+      "value": -236003.0
     },
     {
       "hour_count": 24,
       "period": "2026-08-20",
-      "value": -244038.0
+      "value": -244062.0
     },
     {
       "hour_count": 24,
       "period": "2026-08-21",
-      "value": -227279.0
+      "value": -227262.0
     },
     {
       "hour_count": 24,
       "period": "2026-08-22",
-      "value": -230150.0
+      "value": -230092.0
     },
     {
       "hour_count": 24,
       "period": "2026-08-23",
-      "value": -243309.0
+      "value": -243195.0
+    },
+    {
+      "hour_count": 24,
+      "period": "2026-08-24",
+      "value": -241028.0
     }
   ],
   "dataset": "interchange",
   "day_boundary": "UTC",
-  "first_period": "2026-04-27",
+  "first_period": "2026-04-28",
   "frequency": "daily",
   "geography": {
     "id": "US48",
@@ -606,18 +606,18 @@
     "name": "United States Lower 48"
   },
   "kind": "actual",
-  "last_period": "2026-08-23",
+  "last_period": "2026-08-24",
   "period_count": 119,
   "schema_version": 1,
   "series_id": "EBA.US48-ALL.TI.H",
-  "source_evidence": "data/electricity/official/eia-electricity-f04ad1ab1a3a9379.json",
-  "source_evidence_sha256": "8843694e8fcbd967348ed5c0a8f2c987c061f3d6dfcefb7c4ec98ac5b23c3d83",
+  "source_evidence": "data/electricity/official/eia-electricity-af60c5ccc13708b9.json",
+  "source_evidence_sha256": "9b2b9002614314d2ad6ab3ced1c8fc0e22a7dd9a929beff7dd701adddaf1a9aa",
   "source_url": "https://www.eia.gov/opendata/bulk/EBA.zip",
   "unit": "megawatthours",
   "weekly": [
     {
-      "day_count": 7,
-      "value": -219408.0,
+      "day_count": 6,
+      "value": -174631.0,
       "week_start": "2026-04-27"
     },
     {
@@ -697,8 +697,13 @@
     },
     {
       "day_count": 7,
-      "value": -1651572.0,
+      "value": -1655227.0,
       "week_start": "2026-08-17"
+    },
+    {
+      "day_count": 1,
+      "value": -241028.0,
+      "week_start": "2026-08-24"
     }
   ]
 }
