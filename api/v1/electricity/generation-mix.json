@@ -1262,12 +1262,12 @@
         {
           "hour_count": 24,
           "period": "2026-08-25",
-          "value": 6143023.0
+          "value": 6142884.0
         },
         {
           "hour_count": 24,
           "period": "2026-08-26",
-          "value": 6467252.0
+          "value": 6467179.0
         },
         {
           "hour_count": 24,
@@ -1409,7 +1409,7 @@
         },
         {
           "day_count": 7,
-          "value": 42427304.0,
+          "value": 42427092.0,
           "week_start": "2026-08-24"
         },
         {
@@ -3383,12 +3383,12 @@
         {
           "hour_count": 24,
           "period": "2026-08-25",
-          "value": 155668.0
+          "value": 155653.0
         },
         {
           "hour_count": 24,
           "period": "2026-08-26",
-          "value": 174834.0
+          "value": 174827.0
         },
         {
           "hour_count": 24,
@@ -3530,7 +3530,7 @@
         },
         {
           "day_count": 7,
-          "value": 1188128.0,
+          "value": 1188106.0,
           "week_start": "2026-08-24"
         },
         {
@@ -3915,12 +3915,12 @@
         {
           "hour_count": 24,
           "period": "2026-07-21",
-          "value": 1169893.0
+          "value": 1170294.0
         },
         {
           "hour_count": 24,
           "period": "2026-07-22",
-          "value": 1203637.0
+          "value": 1203720.0
         },
         {
           "hour_count": 24,
@@ -4090,12 +4090,12 @@
         {
           "hour_count": 24,
           "period": "2026-08-25",
-          "value": 1183683.0
+          "value": 1183698.0
         },
         {
           "hour_count": 24,
           "period": "2026-08-26",
-          "value": 1093317.0
+          "value": 1093313.0
         },
         {
           "hour_count": 24,
@@ -4212,7 +4212,7 @@
         },
         {
           "day_count": 7,
-          "value": 8213610.0,
+          "value": 8214094.0,
           "week_start": "2026-07-20"
         },
         {
@@ -4237,7 +4237,7 @@
         },
         {
           "day_count": 7,
-          "value": 7661205.0,
+          "value": 7661216.0,
           "week_start": "2026-08-24"
         },
         {
@@ -5504,12 +5504,12 @@
         {
           "hour_count": 24,
           "period": "2026-08-25",
-          "value": 631510.0
+          "value": 632153.0
         },
         {
           "hour_count": 24,
           "period": "2026-08-26",
-          "value": 631544.0
+          "value": 631870.0
         },
         {
           "hour_count": 24,
@@ -5651,7 +5651,7 @@
         },
         {
           "day_count": 7,
-          "value": 4106697.0,
+          "value": 4107666.0,
           "week_start": "2026-08-24"
         },
         {
@@ -6036,12 +6036,12 @@
         {
           "hour_count": 24,
           "period": "2026-07-21",
-          "value": 1213010.0
+          "value": 1213051.0
         },
         {
           "hour_count": 24,
           "period": "2026-07-22",
-          "value": 891680.0
+          "value": 891696.0
         },
         {
           "hour_count": 24,
@@ -6211,12 +6211,12 @@
         {
           "hour_count": 24,
           "period": "2026-08-25",
-          "value": 901124.0
+          "value": 901136.0
         },
         {
           "hour_count": 24,
           "period": "2026-08-26",
-          "value": 779970.0
+          "value": 779979.0
         },
         {
           "hour_count": 24,
@@ -6333,7 +6333,7 @@
         },
         {
           "day_count": 7,
-          "value": 7218082.0,
+          "value": 7218139.0,
           "week_start": "2026-07-20"
         },
         {
@@ -6358,7 +6358,7 @@
         },
         {
           "day_count": 7,
-          "value": 7160034.0,
+          "value": 7160055.0,
           "week_start": "2026-08-24"
         },
         {
@@ -6402,8 +6402,8 @@
     "total_mwh": 14538855.0
   },
   "schema_version": 1,
-  "source_evidence": "data/electricity/official/eia-electricity-d37a278b45235c8d.json",
-  "source_evidence_sha256": "5bf0a5a658d8a2a6b29ef85777120118c5b0defd9ef1108e6261f5ddb28ad55e",
+  "source_evidence": "data/electricity/official/eia-electricity-aea17f55ef8263ab.json",
+  "source_evidence_sha256": "32b9bb8ddec263a7f4f6d608afb128239bc6b1c0eb25d82c38a5e3d5d05ba64a",
   "source_url": "https://www.eia.gov/opendata/bulk/EBA.zip",
   "unit": "megawatthours"
 }
