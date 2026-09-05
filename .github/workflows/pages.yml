@@ -33,6 +33,7 @@ jobs:
           python -m json.tool api/v1/electricity/demand.json >/dev/null
           python -m json.tool api/v1/electricity/generation.json >/dev/null
           python -m json.tool api/v1/electricity/generation-mix.json >/dev/null
+          python -m json.tool api/v1/electricity/revision-changes.json >/dev/null
           python - <<'PY'
           import json
           from pathlib import Path
@@ -46,6 +47,10 @@ jobs:
           assert len([r for r in demand if r['hour_count']==24])>=2
           mix=json.loads(Path('api/v1/electricity/generation-mix.json').read_text())
           assert mix['day_boundary']=='UTC' and mix['frequency']=='daily' and mix['fuels']
+          revisions=json.loads(Path('api/v1/electricity/revision-changes.json').read_text())
+          assert revisions['total_revision_count']==sum(
+              row['revision_count'] for row in revisions['datasets'].values()
+          )
           PY
       - name: Build public artifact
         run: |
@@ -76,11 +81,15 @@ jobs:
               try:
                   with urlopen(urljoin(base,'deployment.json'),timeout=10) as r: dep=json.load(r)
                   with urlopen(urljoin(base,'api/v1/electricity/metrics.json'),timeout=10) as r: metrics=json.load(r)
+                  with urlopen(urljoin(base,'api/v1/electricity/revision-changes.json'),timeout=10) as r: revisions=json.load(r)
                   with urlopen(base,timeout=10) as r: html=r.read().decode()
                   assert dep['source_commit']==expected
                   assert any(x['metric']=='electricity_demand' for x in metrics['observations'])
+                  assert revisions['total_revision_count']==sum(
+                      row['revision_count'] for row in revisions['datasets'].values()
+                  )
                   assert '今日の電力は' in html and 'generation-mix.json' in html
-                  print({'page_url':base,'source_commit':expected})
+                  print({'page_url':base,'source_commit':expected,'revision_count':revisions['total_revision_count']})
                   break
               except Exception as exc:
                   last=exc; time.sleep(2)
