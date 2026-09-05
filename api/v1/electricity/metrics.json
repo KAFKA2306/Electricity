@@ -1,7 +1,7 @@
 {
   "observations": [
     {
-      "as_of": "2026-08-18",
+      "as_of": "2026-09-03",
       "geography": "US48",
       "metric": "electricity_demand",
       "period": "daily actual",
@@ -10,10 +10,10 @@
       "qualifier": "sum of complete hourly observations for the UTC day",
       "source_url": "https://www.eia.gov/opendata/bulk/EBA.zip",
       "unit": "megawatthours",
-      "value": 14777912.51
+      "value": 14807234.738
     },
     {
-      "as_of": "2026-08-17",
+      "as_of": "2026-09-02",
       "geography": "US48",
       "metric": "net_generation",
       "period": "daily actual",
@@ -22,31 +22,31 @@
       "qualifier": "sum of complete hourly observations for the UTC day",
       "source_url": "https://www.eia.gov/opendata/bulk/EBA.zip",
       "unit": "megawatthours",
-      "value": 14373366.71
+      "value": 14516635.57
     },
     {
-      "as_of": "2026-06",
+      "as_of": "2026-07",
       "geography": "United States and Puerto Rico where reported",
       "metric": "operating_net_summer_capacity",
       "period": "monthly reported inventory",
       "product": "EIA-860M operating generators",
       "provider": "U.S. Energy Information Administration",
       "qualifier": "reported operating net summer capacity; not a forecast",
-      "source_url": "https://www.eia.gov/electricity/data/eia860m/xls/june_generator2026.xlsx",
+      "source_url": "https://www.eia.gov/electricity/data/eia860m/xls/july_generator2026.xlsx",
       "unit": "MW",
-      "value": 1311987.9
+      "value": 1316203.6
     },
     {
-      "as_of": "2026-06",
+      "as_of": "2026-07",
       "geography": "United States and Puerto Rico where reported",
       "metric": "planned_net_summer_capacity",
       "period": "monthly reported inventory",
       "product": "EIA-860M planned generators",
       "provider": "U.S. Energy Information Administration",
       "qualifier": "reported planned capacity; kept separate from operating capacity",
-      "source_url": "https://www.eia.gov/electricity/data/eia860m/xls/june_generator2026.xlsx",
+      "source_url": "https://www.eia.gov/electricity/data/eia860m/xls/july_generator2026.xlsx",
       "unit": "MW",
-      "value": 278074.2
+      "value": 283538.0
     }
   ],
   "schema_version": 1

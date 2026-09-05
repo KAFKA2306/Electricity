@@ -23,9 +23,13 @@ jobs:
         with:
           python-version: '3.12'
       - name: Compile
-        run: python -m py_compile scripts/build_eia_api.py scripts/build_weekly_brief.py scripts/update_eia_electricity.py tests/test_eia_api.py tests/test_weekly_brief.py tests/test_eia_electricity_views.py
+        run: python -m py_compile scripts/build_eia_api.py scripts/build_electricity_metrics.py scripts/build_weekly_brief.py scripts/update_eia_electricity.py tests/test_eia_api.py tests/test_weekly_brief.py tests/test_eia_electricity_views.py
       - name: Unit tests
         run: python -m unittest tests.test_eia_api tests.test_weekly_brief tests.test_eia_electricity_views -v
+      - name: Verify electricity decision metrics
+        run: |
+          python scripts/build_electricity_metrics.py --output /tmp/electricity-metrics.json
+          diff -u api/v1/electricity/metrics.json /tmp/electricity-metrics.json
       - name: Build distribution
         run: python scripts/build_eia_api.py --output build/api/v1
       - name: Smoke test distribution
