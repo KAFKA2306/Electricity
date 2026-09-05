@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Build a compact decision-metric view from canonical EIA electricity outputs."""
+"""Build compact decision metrics and EIA revision changes from canonical outputs."""
 from __future__ import annotations
 
 import argparse
 import json
 import re
+import subprocess
 from pathlib import Path
 from urllib.parse import urlparse
 
@@ -108,14 +109,110 @@ def build(input_dir: Path) -> dict:
     return {"schema_version": 1, "observations": observations}
 
 
+def observations_by_period(series: dict) -> dict[str, dict]:
+    rows = series.get("daily")
+    if not isinstance(rows, list):
+        raise ValueError(f"{series.get('dataset')}: daily must be a list")
+    result: dict[str, dict] = {}
+    for row in rows:
+        period = row.get("period")
+        if not isinstance(period, str) or not period:
+            raise ValueError(f"{series.get('dataset')}: daily row missing period")
+        if period in result:
+            raise ValueError(f"{series.get('dataset')}: duplicate period {period}")
+        result[period] = row
+    return result
+
+
+def revision_changes(previous: dict, current: dict) -> list[dict]:
+    if previous.get("series_id") != current.get("series_id"):
+        raise ValueError("cannot compare different series_id values")
+    if previous.get("unit") != current.get("unit"):
+        raise ValueError("cannot compare different units")
+    before = observations_by_period(previous)
+    after = observations_by_period(current)
+    changes: list[dict] = []
+    for period in sorted(before.keys() & after.keys()):
+        old = before[period].get("value")
+        new = after[period].get("value")
+        if old != new:
+            changes.append(
+                {
+                    "period": period,
+                    "before": old,
+                    "after": new,
+                    "delta": round(float(new) - float(old), 3),
+                }
+            )
+    return changes
+
+
+def load_from_head(path: Path) -> dict:
+    relative = path.resolve().relative_to(ROOT).as_posix()
+    result = subprocess.run(
+        ["git", "show", f"HEAD:{relative}"],
+        cwd=ROOT,
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+    value = json.loads(result.stdout)
+    if not isinstance(value, dict):
+        raise ValueError(f"expected JSON object in HEAD:{relative}")
+    return value
+
+
+def build_revision_report(input_dir: Path) -> dict:
+    datasets: dict[str, dict] = {}
+    total_changes = 0
+    for name in ("demand", "generation", "interchange"):
+        path = input_dir / f"{name}.json"
+        current = load(path)
+        previous = load_from_head(path)
+        changes = revision_changes(previous, current)
+        total_changes += len(changes)
+        datasets[name] = {
+            "series_id": current["series_id"],
+            "unit": current["unit"],
+            "previous_source_evidence": previous.get("source_evidence"),
+            "previous_source_evidence_sha256": previous.get("source_evidence_sha256"),
+            "current_source_evidence": current.get("source_evidence"),
+            "current_source_evidence_sha256": current.get("source_evidence_sha256"),
+            "overlap_period_count": len(
+                observations_by_period(previous).keys() & observations_by_period(current).keys()
+            ),
+            "revision_count": len(changes),
+            "revisions": changes,
+        }
+    return {
+        "schema_version": 1,
+        "publisher": "U.S. Energy Information Administration",
+        "comparison_scope": (
+            "Same series, unit, and daily period present in both consecutive canonical snapshots. "
+            "Rolling-window entry or expiry is not treated as a data revision."
+        ),
+        "total_revision_count": total_changes,
+        "datasets": datasets,
+    }
+
+
+def write_json(path: Path, payload: dict) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--input-dir", type=Path, default=DEFAULT_INPUT)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
+    parser.add_argument("--revision-output", type=Path)
     args = parser.parse_args()
-    payload = build(args.input_dir)
-    args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(json.dumps(payload, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    write_json(args.output, build(args.input_dir))
+    if args.revision_output is not None:
+        write_json(args.revision_output, build_revision_report(args.input_dir))
 
 
 if __name__ == "__main__":
