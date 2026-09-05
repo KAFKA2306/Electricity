@@ -12,6 +12,7 @@ on:
       - .github/workflows/eia-electricity-source.yml
 
 permissions:
+  actions: write
   contents: write
 
 concurrency:
@@ -65,13 +66,21 @@ jobs:
           assert theme['domains']['petroleum']['namespace'] != theme['domains']['electricity']['namespace']
           PY
       - name: Commit changed evidence
+        id: commit
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
           git add data/electricity/official api/v1/electricity api/v1/energy-supply.json
           if git diff --cached --quiet; then
             echo 'No electricity evidence change.'
+            echo 'changed=false' >> "$GITHUB_OUTPUT"
             exit 0
           fi
           git commit -m 'data: update EIA electricity evidence'
           git push
+          echo 'changed=true' >> "$GITHUB_OUTPUT"
+      - name: Publish automated data commit
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --ref main
