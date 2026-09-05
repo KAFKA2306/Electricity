@@ -1,0 +1,41 @@
+{
+  "comparison_scope": "Same series, unit, and daily period present in both consecutive canonical snapshots. Rolling-window entry or expiry is not treated as a data revision.",
+  "datasets": {
+    "demand": {
+      "current_source_evidence": "data/electricity/official/eia-electricity-aea17f55ef8263ab.json",
+      "current_source_evidence_sha256": "32b9bb8ddec263a7f4f6d608afb128239bc6b1c0eb25d82c38a5e3d5d05ba64a",
+      "overlap_period_count": 119,
+      "previous_source_evidence": "data/electricity/official/eia-electricity-aea17f55ef8263ab.json",
+      "previous_source_evidence_sha256": "32b9bb8ddec263a7f4f6d608afb128239bc6b1c0eb25d82c38a5e3d5d05ba64a",
+      "revision_count": 0,
+      "revisions": [],
+      "series_id": "EBA.US48-ALL.D.H",
+      "unit": "megawatthours"
+    },
+    "generation": {
+      "current_source_evidence": "data/electricity/official/eia-electricity-aea17f55ef8263ab.json",
+      "current_source_evidence_sha256": "32b9bb8ddec263a7f4f6d608afb128239bc6b1c0eb25d82c38a5e3d5d05ba64a",
+      "overlap_period_count": 119,
+      "previous_source_evidence": "data/electricity/official/eia-electricity-aea17f55ef8263ab.json",
+      "previous_source_evidence_sha256": "32b9bb8ddec263a7f4f6d608afb128239bc6b1c0eb25d82c38a5e3d5d05ba64a",
+      "revision_count": 0,
+      "revisions": [],
+      "series_id": "EBA.US48-ALL.NG.H",
+      "unit": "megawatthours"
+    },
+    "interchange": {
+      "current_source_evidence": "data/electricity/official/eia-electricity-aea17f55ef8263ab.json",
+      "current_source_evidence_sha256": "32b9bb8ddec263a7f4f6d608afb128239bc6b1c0eb25d82c38a5e3d5d05ba64a",
+      "overlap_period_count": 119,
+      "previous_source_evidence": "data/electricity/official/eia-electricity-aea17f55ef8263ab.json",
+      "previous_source_evidence_sha256": "32b9bb8ddec263a7f4f6d608afb128239bc6b1c0eb25d82c38a5e3d5d05ba64a",
+      "revision_count": 0,
+      "revisions": [],
+      "series_id": "EBA.US48-ALL.TI.H",
+      "unit": "megawatthours"
+    }
+  },
+  "publisher": "U.S. Energy Information Administration",
+  "schema_version": 1,
+  "total_revision_count": 0
+}
