@@ -30,6 +30,30 @@ jobs:
         run: |
           python scripts/build_electricity_metrics.py --output /tmp/electricity-metrics.json
           diff -u api/v1/electricity/metrics.json /tmp/electricity-metrics.json
+      - name: Verify electricity revision semantics
+        run: |
+          python - <<'PY'
+          from scripts.build_electricity_metrics import revision_changes
+          previous = {
+              'series_id': 'EBA.US48-ALL.D.H',
+              'unit': 'megawatthours',
+              'daily': [
+                  {'period': '2026-09-01', 'value': 10.0},
+                  {'period': '2026-09-02', 'value': 20.0},
+              ],
+          }
+          current = {
+              'series_id': 'EBA.US48-ALL.D.H',
+              'unit': 'megawatthours',
+              'daily': [
+                  {'period': '2026-09-02', 'value': 21.5},
+                  {'period': '2026-09-03', 'value': 30.0},
+              ],
+          }
+          assert revision_changes(previous, current) == [
+              {'period': '2026-09-02', 'before': 20.0, 'after': 21.5, 'delta': 1.5}
+          ]
+          PY
       - name: Build distribution
         run: python scripts/build_eia_api.py --output build/api/v1
       - name: Smoke test distribution
