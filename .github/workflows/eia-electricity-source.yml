@@ -79,8 +79,8 @@ jobs:
           git commit -m 'data: update EIA electricity evidence'
           git push
           echo 'changed=true' >> "$GITHUB_OUTPUT"
-      - name: Publish automated data commit
-        if: steps.commit.outputs.changed == 'true'
+      - name: Publish current main revision
+        if: steps.commit.outputs.changed == 'true' || github.event_name == 'push'
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh workflow run pages.yml --ref main
