@@ -1,7 +1,7 @@
 {
   "observations": [
     {
-      "as_of": "2026-09-15",
+      "as_of": "2026-09-16",
       "geography": "US48",
       "metric": "electricity_demand",
       "period": "daily actual",
@@ -10,10 +10,10 @@
       "qualifier": "sum of complete hourly observations for the UTC day",
       "source_url": "https://www.eia.gov/opendata/bulk/EBA.zip",
       "unit": "megawatthours",
-      "value": 13214432.98
+      "value": 13469237.67
     },
     {
-      "as_of": "2026-09-14",
+      "as_of": "2026-09-15",
       "geography": "US48",
       "metric": "net_generation",
       "period": "daily actual",
@@ -22,7 +22,7 @@
       "qualifier": "sum of complete hourly observations for the UTC day",
       "source_url": "https://www.eia.gov/opendata/bulk/EBA.zip",
       "unit": "megawatthours",
-      "value": 13040396.62
+      "value": 13018169.98
     },
     {
       "as_of": "2026-07",

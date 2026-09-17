@@ -2,11 +2,6 @@
   "daily": [
     {
       "hour_count": 24,
-      "period": "2026-05-19",
-      "value": 12476098.832
-    },
-    {
-      "hour_count": 24,
       "period": "2026-05-20",
       "value": 11933586.163
     },
@@ -378,7 +373,7 @@
     {
       "hour_count": 24,
       "period": "2026-08-02",
-      "value": 13293097.29
+      "value": 13293098.29
     },
     {
       "hour_count": 24,
@@ -523,82 +518,87 @@
     {
       "hour_count": 24,
       "period": "2026-08-31",
-      "value": 13969675.566
+      "value": 13963105.566
     },
     {
       "hour_count": 24,
       "period": "2026-09-01",
-      "value": 14400772.793
+      "value": 14397383.793
     },
     {
       "hour_count": 24,
       "period": "2026-09-02",
-      "value": 14570303.428
+      "value": 14567142.428
     },
     {
       "hour_count": 24,
       "period": "2026-09-03",
-      "value": 14639558.699
+      "value": 14634544.699
     },
     {
       "hour_count": 24,
       "period": "2026-09-04",
-      "value": 14537271.129
+      "value": 14532354.129
     },
     {
       "hour_count": 24,
       "period": "2026-09-05",
-      "value": 13650235.919
+      "value": 13645441.919
     },
     {
       "hour_count": 24,
       "period": "2026-09-06",
-      "value": 12864981.568
+      "value": 12859656.861
     },
     {
       "hour_count": 24,
       "period": "2026-09-07",
-      "value": 12593750.62
+      "value": 12589944.936
     },
     {
       "hour_count": 24,
       "period": "2026-09-08",
-      "value": 13360646.73
+      "value": 13395097.73
     },
     {
       "hour_count": 24,
       "period": "2026-09-09",
-      "value": 14051221.39
+      "value": 14050632.39
     },
     {
       "hour_count": 24,
       "period": "2026-09-10",
-      "value": 14059514.14
+      "value": 14055360.14
     },
     {
       "hour_count": 24,
       "period": "2026-09-11",
-      "value": 13695159.12
+      "value": 13692356.12
     },
     {
       "hour_count": 24,
       "period": "2026-09-12",
-      "value": 12955427.14
+      "value": 12951946.14
     },
     {
       "hour_count": 24,
       "period": "2026-09-13",
-      "value": 12759368.48
+      "value": 12755238.48
     },
     {
       "hour_count": 24,
       "period": "2026-09-14",
-      "value": 13040396.62
+      "value": 13036622.62
+    },
+    {
+      "hour_count": 24,
+      "period": "2026-09-15",
+      "value": 13018169.98
     }
   ],
   "dataset": "generation",
   "day_boundary": "UTC",
-  "first_period": "2026-05-19",
+  "first_period": "2026-05-20",
   "frequency": "daily",
   "geography": {
     "id": "US48",
@@ -606,18 +606,18 @@
     "name": "United States Lower 48"
   },
   "kind": "actual",
-  "last_period": "2026-09-14",
+  "last_period": "2026-09-15",
   "period_count": 119,
   "schema_version": 1,
   "series_id": "EBA.US48-ALL.NG.H",
-  "source_evidence": "data/electricity/official/eia-electricity-b417ea56e2459659.json",
-  "source_evidence_sha256": "4f8ec653f6997692cf85f47f1f3b3cbfe0523d76be6891a8c250a2b8870af93e",
+  "source_evidence": "data/electricity/official/eia-electricity-c2724f869eeb4f10.json",
+  "source_evidence_sha256": "dc40aad4899707304bb5593f03ba63e2e74420d643b1c4f3454077f06963cd17",
   "source_url": "https://www.eia.gov/opendata/bulk/EBA.zip",
   "unit": "megawatthours",
   "weekly": [
     {
-      "day_count": 6,
-      "value": 67914619.776,
+      "day_count": 5,
+      "value": 55438520.944,
       "week_start": "2026-05-18"
     },
     {
@@ -667,7 +667,7 @@
     },
     {
       "day_count": 7,
-      "value": 99447194.982,
+      "value": 99447195.982,
       "week_start": "2026-07-27"
     },
     {
@@ -692,17 +692,17 @@
     },
     {
       "day_count": 7,
-      "value": 98632799.102,
+      "value": 98599629.395,
       "week_start": "2026-08-31"
     },
     {
       "day_count": 7,
-      "value": 93475087.62,
+      "value": 93490575.936,
       "week_start": "2026-09-07"
     },
     {
-      "day_count": 1,
-      "value": 13040396.62,
+      "day_count": 2,
+      "value": 26054792.6,
       "week_start": "2026-09-14"
     }
   ]
