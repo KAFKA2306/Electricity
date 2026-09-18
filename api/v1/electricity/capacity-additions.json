@@ -58,8 +58,8 @@
     "net_summer_capacity_mw": 264269.6
   },
   "schema_version": 1,
-  "source_evidence": "data/electricity/official/eia-electricity-c2724f869eeb4f10.json",
-  "source_evidence_sha256": "dc40aad4899707304bb5593f03ba63e2e74420d643b1c4f3454077f06963cd17",
+  "source_evidence": "data/electricity/official/eia-electricity-eb3637252d015454.json",
+  "source_evidence_sha256": "a8b867857e0f065129359b50cf46043896495c3bfa4cb51b643d4787561a4e2a",
   "source_url": "https://www.eia.gov/electricity/data/eia860m/xls/july_generator2026.xlsx",
   "unit": "MW"
 }
