@@ -2,11 +2,6 @@
   "daily": [
     {
       "hour_count": 24,
-      "period": "2026-05-29",
-      "value": 11774863.562
-    },
-    {
-      "hour_count": 24,
       "period": "2026-05-30",
       "value": 11310532.378
     },
@@ -378,7 +373,7 @@
     {
       "hour_count": 24,
       "period": "2026-08-12",
-      "value": 14563097.575
+      "value": 14563098.575
     },
     {
       "hour_count": 24,
@@ -553,22 +548,22 @@
     {
       "hour_count": 24,
       "period": "2026-09-16",
-      "value": 13256873.516
+      "value": 13256528.911
     },
     {
       "hour_count": 24,
       "period": "2026-09-17",
-      "value": 13315214.3
+      "value": 13314847.005
     },
     {
       "hour_count": 24,
       "period": "2026-09-18",
-      "value": 13250222.7
+      "value": 13289690.7
     },
     {
       "hour_count": 24,
       "period": "2026-09-19",
-      "value": 12344880.94
+      "value": 12345967.94
     },
     {
       "hour_count": 24,
@@ -593,12 +588,17 @@
     {
       "hour_count": 24,
       "period": "2026-09-24",
-      "value": 11630568.07
+      "value": 11630396.07
+    },
+    {
+      "hour_count": 24,
+      "period": "2026-09-25",
+      "value": 11404784.92
     }
   ],
   "dataset": "generation",
   "day_boundary": "UTC",
-  "first_period": "2026-05-29",
+  "first_period": "2026-05-30",
   "frequency": "daily",
   "geography": {
     "id": "US48",
@@ -606,18 +606,18 @@
     "name": "United States Lower 48"
   },
   "kind": "actual",
-  "last_period": "2026-09-24",
+  "last_period": "2026-09-25",
   "period_count": 119,
   "schema_version": 1,
   "series_id": "EBA.US48-ALL.NG.H",
-  "source_evidence": "data/electricity/official/eia-electricity-63e5622090b7e800.json",
-  "source_evidence_sha256": "80ed0bcadddc91dd6b0c56d9149d4bfb77f8bb4508abbb40359092c0c9b20a2a",
+  "source_evidence": "data/electricity/official/eia-electricity-b228eb0f34d15fbe.json",
+  "source_evidence_sha256": "ed58ef0cd992dcd4396265b68777e3a9fc5736a01d16b8ac5770af5b76aafed9",
   "source_url": "https://www.eia.gov/opendata/bulk/EBA.zip",
   "unit": "megawatthours",
   "weekly": [
     {
-      "day_count": 3,
-      "value": 34041747.243,
+      "day_count": 2,
+      "value": 22266883.681,
       "week_start": "2026-05-25"
     },
     {
@@ -672,7 +672,7 @@
     },
     {
       "day_count": 7,
-      "value": 100552708.532,
+      "value": 100552709.532,
       "week_start": "2026-08-10"
     },
     {
@@ -697,12 +697,12 @@
     },
     {
       "day_count": 7,
-      "value": 90358414.824,
+      "value": 90398257.924,
       "week_start": "2026-09-14"
     },
     {
-      "day_count": 4,
-      "value": 47823829.32,
+      "day_count": 5,
+      "value": 59228442.24,
       "week_start": "2026-09-21"
     }
   ]
