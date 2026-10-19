@@ -2,11 +2,6 @@
   "daily": [
     {
       "hour_count": 24,
-      "period": "2026-06-20",
-      "value": -257648.0
-    },
-    {
-      "hour_count": 24,
       "period": "2026-06-21",
       "value": -231669.0
     },
@@ -563,12 +558,12 @@
     {
       "hour_count": 24,
       "period": "2026-10-10",
-      "value": -66414.0
+      "value": -66484.0
     },
     {
       "hour_count": 24,
       "period": "2026-10-11",
-      "value": -84149.0
+      "value": -84150.0
     },
     {
       "hour_count": 24,
@@ -583,22 +578,27 @@
     {
       "hour_count": 24,
       "period": "2026-10-14",
-      "value": -177072.0
+      "value": -172816.0
     },
     {
       "hour_count": 24,
       "period": "2026-10-15",
-      "value": -193543.0
+      "value": -186899.0
     },
     {
       "hour_count": 24,
       "period": "2026-10-16",
-      "value": -166770.0
+      "value": -131601.0
+    },
+    {
+      "hour_count": 24,
+      "period": "2026-10-17",
+      "value": -114447.0
     }
   ],
   "dataset": "interchange",
   "day_boundary": "UTC",
-  "first_period": "2026-06-20",
+  "first_period": "2026-06-21",
   "frequency": "daily",
   "geography": {
     "id": "US48",
@@ -606,18 +606,18 @@
     "name": "United States Lower 48"
   },
   "kind": "actual",
-  "last_period": "2026-10-16",
+  "last_period": "2026-10-17",
   "period_count": 119,
   "schema_version": 1,
   "series_id": "EBA.US48-ALL.TI.H",
-  "source_evidence": "data/electricity/official/eia-electricity-60d80073e69d5546.json",
-  "source_evidence_sha256": "acee2eacec4a44025c05d3b6139e893d9b2309babd60d52351c67b807c055020",
+  "source_evidence": "data/electricity/official/eia-electricity-ae209f33d332557b.json",
+  "source_evidence_sha256": "5bd26fb78d4d0fa6ce431bf42a35e547079cd07ddac9a5386b82b01662ffa362",
   "source_url": "https://www.eia.gov/opendata/bulk/EBA.zip",
   "unit": "megawatthours",
   "weekly": [
     {
-      "day_count": 2,
-      "value": -489317.0,
+      "day_count": 1,
+      "value": -231669.0,
       "week_start": "2026-06-15"
     },
     {
@@ -697,12 +697,12 @@
     },
     {
       "day_count": 7,
-      "value": -682162.0,
+      "value": -682233.0,
       "week_start": "2026-10-05"
     },
     {
-      "day_count": 5,
-      "value": -865144.0,
+      "day_count": 6,
+      "value": -933522.0,
       "week_start": "2026-10-12"
     }
   ]
