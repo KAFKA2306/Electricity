@@ -2,204 +2,204 @@
   "comparison_scope": "Same series, unit, and daily period present in both consecutive canonical snapshots. Rolling-window entry or expiry is not treated as a data revision.",
   "datasets": {
     "demand": {
-      "current_source_evidence": "data/electricity/official/eia-electricity-fefffbb66000b558.json",
-      "current_source_evidence_sha256": "5886e4c70bb9308dc703be01cb35f4f4fbc4687f85c9d48da8dd4e63115ea2d9",
+      "current_source_evidence": "data/electricity/official/eia-electricity-57dc3740c66b6fee.json",
+      "current_source_evidence_sha256": "e3982a93d890a16e9fa8c67a426e077caa63bd3a8f8027ca1a4acdbfe63afebd",
       "overlap_period_count": 118,
-      "previous_source_evidence": "data/electricity/official/eia-electricity-e5c11edce9b9b604.json",
-      "previous_source_evidence_sha256": "a1c2d57f69b4d9d1cf56bcf5a01427b06ee86147bde3fc25c2e0048c67f62d78",
+      "previous_source_evidence": "data/electricity/official/eia-electricity-fefffbb66000b558.json",
+      "previous_source_evidence_sha256": "5886e4c70bb9308dc703be01cb35f4f4fbc4687f85c9d48da8dd4e63115ea2d9",
       "revision_count": 12,
       "revisions": [
         {
-          "after": 13871510.351,
-          "before": 13870837.374,
-          "delta": 672.977,
-          "period": "2026-09-05"
-        },
-        {
-          "after": 13054783.381,
-          "before": 13054494.861,
-          "delta": 288.52,
+          "after": 13055211.396,
+          "before": 13054783.381,
+          "delta": 428.015,
           "period": "2026-09-06"
         },
         {
-          "after": 10953297.274,
-          "before": 10953113.013,
-          "delta": 184.261,
-          "period": "2026-10-10"
+          "after": 12756321.25,
+          "before": 12755840.952,
+          "delta": 480.298,
+          "period": "2026-09-07"
         },
         {
-          "after": 10868191.274,
-          "before": 10868019.18,
-          "delta": 172.094,
+          "after": 10868520.902,
+          "before": 10868191.274,
+          "delta": 329.628,
           "period": "2026-10-11"
         },
         {
-          "after": 11507396.2,
-          "before": 11472371.2,
-          "delta": 35025.0,
+          "after": 11507521.418,
+          "before": 11507396.2,
+          "delta": 125.218,
           "period": "2026-10-12"
         },
         {
-          "after": 11969034.07,
-          "before": 11965420.07,
-          "delta": 3614.0,
+          "after": 12004932.07,
+          "before": 11969034.07,
+          "delta": 35898.0,
           "period": "2026-10-13"
         },
         {
-          "after": 11996728.08,
-          "before": 11996778.08,
-          "delta": -50.0,
+          "after": 12000103.08,
+          "before": 11996728.08,
+          "delta": 3375.0,
           "period": "2026-10-14"
         },
         {
-          "after": 11708403.18,
-          "before": 11709093.18,
-          "delta": -690.0,
+          "after": 11708354.18,
+          "before": 11708403.18,
+          "delta": -49.0,
           "period": "2026-10-15"
         },
         {
-          "after": 11451744.06,
-          "before": 11452196.06,
-          "delta": -452.0,
+          "after": 11451750.06,
+          "before": 11451744.06,
+          "delta": 6.0,
           "period": "2026-10-16"
         },
         {
-          "after": 10246660.18,
-          "before": 10246501.18,
-          "delta": 159.0,
+          "after": 10246616.18,
+          "before": 10246660.18,
+          "delta": -44.0,
           "period": "2026-10-17"
         },
         {
-          "after": 9844319.17,
-          "before": 9843697.17,
-          "delta": 622.0,
+          "after": 9845394.17,
+          "before": 9844319.17,
+          "delta": 1075.0,
           "period": "2026-10-18"
         },
         {
-          "after": 10496995.76,
-          "before": 10588343.515,
-          "delta": -91347.755,
+          "after": 10497143.76,
+          "before": 10496995.76,
+          "delta": 148.0,
           "period": "2026-10-19"
+        },
+        {
+          "after": 10689621.48,
+          "before": 10761056.437,
+          "delta": -71434.957,
+          "period": "2026-10-20"
         }
       ],
       "series_id": "EBA.US48-ALL.D.H",
       "unit": "megawatthours"
     },
     "generation": {
-      "current_source_evidence": "data/electricity/official/eia-electricity-fefffbb66000b558.json",
-      "current_source_evidence_sha256": "5886e4c70bb9308dc703be01cb35f4f4fbc4687f85c9d48da8dd4e63115ea2d9",
+      "current_source_evidence": "data/electricity/official/eia-electricity-57dc3740c66b6fee.json",
+      "current_source_evidence_sha256": "e3982a93d890a16e9fa8c67a426e077caa63bd3a8f8027ca1a4acdbfe63afebd",
       "overlap_period_count": 118,
-      "previous_source_evidence": "data/electricity/official/eia-electricity-e5c11edce9b9b604.json",
-      "previous_source_evidence_sha256": "a1c2d57f69b4d9d1cf56bcf5a01427b06ee86147bde3fc25c2e0048c67f62d78",
-      "revision_count": 10,
+      "previous_source_evidence": "data/electricity/official/eia-electricity-fefffbb66000b558.json",
+      "previous_source_evidence_sha256": "5886e4c70bb9308dc703be01cb35f4f4fbc4687f85c9d48da8dd4e63115ea2d9",
+      "revision_count": 11,
       "revisions": [
         {
-          "after": 13646338.351,
-          "before": 13645665.374,
-          "delta": 672.977,
-          "period": "2026-09-05"
-        },
-        {
-          "after": 12859945.381,
-          "before": 12859656.861,
-          "delta": 288.52,
+          "after": 12860373.395,
+          "before": 12859945.381,
+          "delta": 428.014,
           "period": "2026-09-06"
         },
         {
-          "after": 10874974.274,
-          "before": 10874790.014,
-          "delta": 184.26,
-          "period": "2026-10-10"
+          "after": 12590915.25,
+          "before": 12590434.952,
+          "delta": 480.298,
+          "period": "2026-09-07"
         },
         {
-          "after": 10746062.274,
-          "before": 10745890.18,
-          "delta": 172.094,
+          "after": 10746391.902,
+          "before": 10746062.274,
+          "delta": 329.628,
           "period": "2026-10-11"
         },
         {
-          "after": 11359056.2,
-          "before": 11324083.2,
-          "delta": 34973.0,
+          "after": 11359181.418,
+          "before": 11359056.2,
+          "delta": 125.218,
           "period": "2026-10-12"
         },
         {
-          "after": 11771178.07,
-          "before": 11767562.07,
-          "delta": 3616.0,
+          "after": 11807016.07,
+          "before": 11771178.07,
+          "delta": 35838.0,
           "period": "2026-10-13"
         },
         {
-          "after": 11521803.18,
-          "before": 11522493.18,
-          "delta": -690.0,
+          "after": 11810192.08,
+          "before": 11806898.08,
+          "delta": 3294.0,
+          "period": "2026-10-14"
+        },
+        {
+          "after": 11521754.18,
+          "before": 11521803.18,
+          "delta": -49.0,
           "period": "2026-10-15"
         },
         {
-          "after": 11299867.06,
-          "before": 11298232.06,
-          "delta": 1635.0,
+          "after": 11299579.06,
+          "before": 11299867.06,
+          "delta": -288.0,
           "period": "2026-10-16"
         },
         {
-          "after": 10081639.18,
-          "before": 10085177.18,
-          "delta": -3538.0,
+          "after": 10081595.18,
+          "before": 10081639.18,
+          "delta": -44.0,
           "period": "2026-10-17"
         },
         {
-          "after": 9666625.17,
-          "before": 9665169.17,
-          "delta": 1456.0,
+          "after": 9666410.17,
+          "before": 9666625.17,
+          "delta": -215.0,
           "period": "2026-10-18"
+        },
+        {
+          "after": 10289111.76,
+          "before": 10291248.76,
+          "delta": -2137.0,
+          "period": "2026-10-19"
         }
       ],
       "series_id": "EBA.US48-ALL.NG.H",
       "unit": "megawatthours"
     },
     "interchange": {
-      "current_source_evidence": "data/electricity/official/eia-electricity-fefffbb66000b558.json",
-      "current_source_evidence_sha256": "5886e4c70bb9308dc703be01cb35f4f4fbc4687f85c9d48da8dd4e63115ea2d9",
+      "current_source_evidence": "data/electricity/official/eia-electricity-57dc3740c66b6fee.json",
+      "current_source_evidence_sha256": "e3982a93d890a16e9fa8c67a426e077caa63bd3a8f8027ca1a4acdbfe63afebd",
       "overlap_period_count": 118,
-      "previous_source_evidence": "data/electricity/official/eia-electricity-e5c11edce9b9b604.json",
-      "previous_source_evidence_sha256": "a1c2d57f69b4d9d1cf56bcf5a01427b06ee86147bde3fc25c2e0048c67f62d78",
-      "revision_count": 6,
+      "previous_source_evidence": "data/electricity/official/eia-electricity-fefffbb66000b558.json",
+      "previous_source_evidence_sha256": "5886e4c70bb9308dc703be01cb35f4f4fbc4687f85c9d48da8dd4e63115ea2d9",
+      "revision_count": 5,
       "revisions": [
         {
-          "after": -136870.0,
-          "before": -136818.0,
-          "delta": -52.0,
-          "period": "2026-10-12"
-        },
-        {
-          "after": -186730.0,
-          "before": -186732.0,
-          "delta": 2.0,
+          "after": -186790.0,
+          "before": -186730.0,
+          "delta": -60.0,
           "period": "2026-10-13"
         },
         {
-          "after": -170166.0,
-          "before": -170216.0,
-          "delta": 50.0,
+          "after": -170156.0,
+          "before": -170166.0,
+          "delta": 10.0,
           "period": "2026-10-14"
         },
         {
-          "after": -131564.0,
-          "before": -131568.0,
-          "delta": 4.0,
+          "after": -131858.0,
+          "before": -131564.0,
+          "delta": -294.0,
           "period": "2026-10-16"
         },
         {
-          "after": -113122.0,
-          "before": -114498.0,
-          "delta": 1376.0,
-          "period": "2026-10-17"
+          "after": -82761.0,
+          "before": -82785.0,
+          "delta": 24.0,
+          "period": "2026-10-18"
         },
         {
-          "after": -82785.0,
-          "before": -83241.0,
-          "delta": 456.0,
-          "period": "2026-10-18"
+          "after": -119966.0,
+          "before": -129024.0,
+          "delta": 9058.0,
+          "period": "2026-10-19"
         }
       ],
       "series_id": "EBA.US48-ALL.TI.H",
