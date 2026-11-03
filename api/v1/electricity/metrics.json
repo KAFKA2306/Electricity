@@ -10,7 +10,7 @@
       "qualifier": "sum of complete hourly observations for the UTC day",
       "source_url": "https://www.eia.gov/opendata/bulk/EBA.zip",
       "unit": "megawatthours",
-      "value": 8672516.85
+      "value": 10701804.838
     },
     {
       "as_of": "2026-11-01",
@@ -22,7 +22,7 @@
       "qualifier": "sum of complete hourly observations for the UTC day",
       "source_url": "https://www.eia.gov/opendata/bulk/EBA.zip",
       "unit": "megawatthours",
-      "value": 9963123.27
+      "value": 9962749.27
     },
     {
       "as_of": "2026-09",
