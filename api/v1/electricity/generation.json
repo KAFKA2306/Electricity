@@ -2,11 +2,6 @@
   "daily": [
     {
       "hour_count": 24,
-      "period": "2026-07-30",
-      "value": 14229229.726
-    },
-    {
-      "hour_count": 24,
       "period": "2026-07-31",
       "value": 14266969.735
     },
@@ -548,12 +543,12 @@
     {
       "hour_count": 24,
       "period": "2026-11-16",
-      "value": 11077366.071
+      "value": 11078040.738
     },
     {
       "hour_count": 24,
       "period": "2026-11-17",
-      "value": 11227694.77
+      "value": 11227418.02
     },
     {
       "hour_count": 24,
@@ -588,17 +583,22 @@
     {
       "hour_count": 24,
       "period": "2026-11-24",
-      "value": 11222378.63
+      "value": 11222744.63
     },
     {
       "hour_count": 24,
       "period": "2026-11-25",
-      "value": 11667563.26
+      "value": 11667766.26
+    },
+    {
+      "hour_count": 24,
+      "period": "2026-11-26",
+      "value": 11236475.33
     }
   ],
   "dataset": "generation",
   "day_boundary": "UTC",
-  "first_period": "2026-07-30",
+  "first_period": "2026-07-31",
   "frequency": "daily",
   "geography": {
     "id": "US48",
@@ -606,18 +606,18 @@
     "name": "United States Lower 48"
   },
   "kind": "actual",
-  "last_period": "2026-11-25",
+  "last_period": "2026-11-26",
   "period_count": 119,
   "schema_version": 1,
   "series_id": "EBA.US48-ALL.NG.H",
-  "source_evidence": "data/electricity/official/eia-electricity-9f00b42fcc94c5c9.json",
-  "source_evidence_sha256": "bbfe7bda361a25e6e67818b7389a94c94586d7f25260e858677b3998709c5f25",
+  "source_evidence": "data/electricity/official/eia-electricity-f13423bd9686c7fe.json",
+  "source_evidence_sha256": "b4a1e5f3f214f102729b906746ae6e8dd2d0c25298a12a2e1c11e6d31d5fbeb7",
   "source_url": "https://www.eia.gov/opendata/bulk/EBA.zip",
   "unit": "megawatthours",
   "weekly": [
     {
-      "day_count": 4,
-      "value": 55623041.032,
+      "day_count": 3,
+      "value": 41393811.306,
       "week_start": "2026-07-27"
     },
     {
@@ -697,12 +697,12 @@
     },
     {
       "day_count": 7,
-      "value": 75823358.281,
+      "value": 75823756.198,
       "week_start": "2026-11-16"
     },
     {
-      "day_count": 3,
-      "value": 33572389.29,
+      "day_count": 4,
+      "value": 44809433.62,
       "week_start": "2026-11-23"
     }
   ]
